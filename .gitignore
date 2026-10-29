@@ -1,0 +1,18 @@
+# Local runtimes and downloaded model weights
+**/.venv/
+**/.cache/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.chroma_specgraph/
+
+# Local credentials and OS metadata
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Original local reference documents; this repository release covers code/data.
+/CS224W_Final_Project_Ideas.docx
+/CS224W_Proposal.pdf

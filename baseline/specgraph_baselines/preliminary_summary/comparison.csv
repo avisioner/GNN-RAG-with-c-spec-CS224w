@@ -1,0 +1,13 @@
+run,method,query_mode,dense_to_bm25_weight,lexical_mode,embedding_model,queries,recall@5,precision@5,complete_coverage@5,ndcg@5,recall@10,precision@10,complete_coverage@10,ndcg@10,recall@50,precision@50,complete_coverage@50,ndcg@50
+results_bm25,bm25,query_code,,raw,,49,0.14796,0.04082,0.10204,0.11481,0.2619,0.04286,0.16327,0.15979,0.94898,0.03551,0.87755,0.33835
+results_ablation_query_code,bm25,query_code,,content,,49,0.44898,0.12653,0.34694,0.41093,0.52891,0.08163,0.38776,0.44448,0.97279,0.03673,0.93878,0.56785
+results_ablation_query_code,dense,query_code,,content,BAAI/bge-small-en-v1.5,49,0.52891,0.16735,0.32653,0.44832,0.70918,0.12041,0.53061,0.52045,0.97279,0.03673,0.93878,0.59918
+results_ablation_query_code,hybrid_rrf_d1,query_code,1,content,BAAI/bge-small-en-v1.5,49,0.54932,0.16735,0.38776,0.48054,0.69388,0.11837,0.5102,0.54178,0.98299,0.03714,0.95918,0.62513
+results_ablation_query_code,hybrid_rrf_d2,query_code,2,content,BAAI/bge-small-en-v1.5,49,0.61054,0.19592,0.42857,0.49938,0.70238,0.12041,0.5102,0.5389,0.97279,0.03673,0.93878,0.61963
+results_ablation_query_code,hybrid_rrf_d3,query_code,3,content,BAAI/bge-small-en-v1.5,49,0.61735,0.2,0.42857,0.49729,0.70578,0.12041,0.53061,0.53428,0.97279,0.03673,0.93878,0.61559
+results_ablation_query_code,hybrid_cross_encoder,query_code,,content,BAAI/bge-small-en-v1.5,49,0.44048,0.13061,0.30612,0.37014,0.55782,0.09184,0.40816,0.41807,0.98299,0.03714,0.95918,0.53311
+results_ablation_question,bm25,question,,content,,49,0.53061,0.15918,0.36735,0.47579,0.57823,0.0898,0.42857,0.49593,0.84014,0.0302,0.69388,0.57129
+results_ablation_question,dense,question,,content,BAAI/bge-small-en-v1.5,49,0.60884,0.2,0.42857,0.52645,0.7415,0.12857,0.57143,0.58112,0.97619,0.03673,0.93878,0.64964
+results_ablation_question,hybrid_rrf_d1,question,1,content,BAAI/bge-small-en-v1.5,49,0.61905,0.19592,0.46939,0.56351,0.70238,0.11837,0.53061,0.59858,0.98639,0.03714,0.95918,0.67173
+results_ablation_question,hybrid_rrf_d2,question,2,content,BAAI/bge-small-en-v1.5,49,0.65816,0.21633,0.4898,0.58416,0.69898,0.11837,0.5102,0.60147,0.97619,0.03673,0.93878,0.67432
+results_ablation_question,hybrid_rrf_d3,question,3,content,BAAI/bge-small-en-v1.5,49,0.64796,0.21224,0.46939,0.57897,0.71599,0.12245,0.53061,0.607,0.97619,0.03673,0.93878,0.67534

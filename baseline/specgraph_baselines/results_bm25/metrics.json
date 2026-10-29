@@ -1,0 +1,124 @@
+{
+  "evaluated_queries": 49,
+  "overall": {
+    "bm25": {
+      "recall@5": 0.14796,
+      "precision@5": 0.04082,
+      "complete_coverage@5": 0.10204,
+      "ndcg@5": 0.11481,
+      "recall@10": 0.2619,
+      "precision@10": 0.04286,
+      "complete_coverage@10": 0.16327,
+      "ndcg@10": 0.15979
+    }
+  },
+  "by_difficulty": {
+    "multi_hop": {
+      "n": 17,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.04412,
+          "precision@5": 0.02353,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.03424,
+          "recall@10": 0.16667,
+          "precision@10": 0.04706,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.09075
+        }
+      }
+    },
+    "single_clause": {
+      "n": 15,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.33333,
+          "precision@5": 0.06667,
+          "complete_coverage@5": 0.33333,
+          "ndcg@5": 0.22871,
+          "recall@10": 0.46667,
+          "precision@10": 0.04667,
+          "complete_coverage@10": 0.46667,
+          "ndcg@10": 0.26885
+        }
+      }
+    },
+    "two_clause": {
+      "n": 17,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.08824,
+          "precision@5": 0.03529,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.09489,
+          "recall@10": 0.17647,
+          "precision@10": 0.03529,
+          "complete_coverage@10": 0.05882,
+          "ndcg@10": 0.13261
+        }
+      }
+    }
+  },
+  "by_gold_count": {
+    "1": {
+      "n": 15,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.33333,
+          "precision@5": 0.06667,
+          "complete_coverage@5": 0.33333,
+          "ndcg@5": 0.22871,
+          "recall@10": 0.46667,
+          "precision@10": 0.04667,
+          "complete_coverage@10": 0.46667,
+          "ndcg@10": 0.26885
+        }
+      }
+    },
+    "2": {
+      "n": 25,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.08,
+          "precision@5": 0.032,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.08,
+          "recall@10": 0.16,
+          "precision@10": 0.032,
+          "complete_coverage@10": 0.04,
+          "ndcg@10": 0.11382
+        }
+      }
+    },
+    "3": {
+      "n": 8,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@10": 0.16667,
+          "precision@10": 0.05,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.07985
+        }
+      }
+    },
+    "4": {
+      "n": 1,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.25,
+          "precision@5": 0.2,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.19519,
+          "recall@10": 0.5,
+          "precision@10": 0.2,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.31271
+        }
+      }
+    }
+  }
+}

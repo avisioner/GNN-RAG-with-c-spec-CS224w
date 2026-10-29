@@ -1,0 +1,364 @@
+{
+  "evaluated_queries": 49,
+  "overall": {
+    "bm25": {
+      "recall@5": 0.44898,
+      "precision@5": 0.12653,
+      "complete_coverage@5": 0.34694,
+      "ndcg@5": 0.41093,
+      "recall@10": 0.52891,
+      "precision@10": 0.08163,
+      "complete_coverage@10": 0.38776,
+      "ndcg@10": 0.44448
+    },
+    "dense": {
+      "recall@5": 0.52891,
+      "precision@5": 0.16735,
+      "complete_coverage@5": 0.32653,
+      "ndcg@5": 0.44832,
+      "recall@10": 0.70918,
+      "precision@10": 0.12041,
+      "complete_coverage@10": 0.53061,
+      "ndcg@10": 0.52045
+    },
+    "hybrid_rrf": {
+      "recall@5": 0.54932,
+      "precision@5": 0.16735,
+      "complete_coverage@5": 0.38776,
+      "ndcg@5": 0.48054,
+      "recall@10": 0.69388,
+      "precision@10": 0.11837,
+      "complete_coverage@10": 0.5102,
+      "ndcg@10": 0.54178
+    },
+    "hybrid_cross_encoder": {
+      "recall@5": 0.44048,
+      "precision@5": 0.13061,
+      "complete_coverage@5": 0.30612,
+      "ndcg@5": 0.37014,
+      "recall@10": 0.55782,
+      "precision@10": 0.09184,
+      "complete_coverage@10": 0.40816,
+      "ndcg@10": 0.41807
+    }
+  },
+  "by_difficulty": {
+    "multi_hop": {
+      "n": 17,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.17647,
+          "precision@5": 0.08235,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.14506,
+          "recall@10": 0.2598,
+          "precision@10": 0.06471,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.18264
+        },
+        "dense": {
+          "recall@5": 0.31863,
+          "precision@5": 0.16471,
+          "complete_coverage@5": 0.05882,
+          "ndcg@5": 0.27736,
+          "recall@10": 0.45588,
+          "precision@10": 0.11765,
+          "complete_coverage@10": 0.11765,
+          "ndcg@10": 0.33524
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.28922,
+          "precision@5": 0.14118,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.27061,
+          "recall@10": 0.52941,
+          "precision@10": 0.13529,
+          "complete_coverage@10": 0.17647,
+          "ndcg@10": 0.37579
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.21078,
+          "precision@5": 0.10588,
+          "complete_coverage@5": 0.05882,
+          "ndcg@5": 0.16265,
+          "recall@10": 0.31373,
+          "precision@10": 0.08235,
+          "complete_coverage@10": 0.05882,
+          "ndcg@10": 0.20652
+        }
+      }
+    },
+    "single_clause": {
+      "n": 15,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.93333,
+          "precision@5": 0.18667,
+          "complete_coverage@5": 0.93333,
+          "ndcg@5": 0.83491,
+          "recall@10": 0.93333,
+          "precision@10": 0.09333,
+          "complete_coverage@10": 0.93333,
+          "ndcg@10": 0.83491
+        },
+        "dense": {
+          "recall@5": 0.93333,
+          "precision@5": 0.18667,
+          "complete_coverage@5": 0.93333,
+          "ndcg@5": 0.7607,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "complete_coverage@10": 1.0,
+          "ndcg@10": 0.78445
+        },
+        "hybrid_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "complete_coverage@5": 1.0,
+          "ndcg@5": 0.86363,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "complete_coverage@10": 1.0,
+          "ndcg@10": 0.86363
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.86667,
+          "precision@5": 0.17333,
+          "complete_coverage@5": 0.86667,
+          "ndcg@5": 0.73491,
+          "recall@10": 0.86667,
+          "precision@10": 0.08667,
+          "complete_coverage@10": 0.86667,
+          "ndcg@10": 0.73491
+        }
+      }
+    },
+    "two_clause": {
+      "n": 17,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.29412,
+          "precision@5": 0.11765,
+          "complete_coverage@5": 0.17647,
+          "ndcg@5": 0.30271,
+          "recall@10": 0.44118,
+          "precision@10": 0.08824,
+          "complete_coverage@10": 0.29412,
+          "ndcg@10": 0.36183
+        },
+        "dense": {
+          "recall@5": 0.38235,
+          "precision@5": 0.15294,
+          "complete_coverage@5": 0.05882,
+          "ndcg@5": 0.34365,
+          "recall@10": 0.70588,
+          "precision@10": 0.14118,
+          "complete_coverage@10": 0.52941,
+          "ndcg@10": 0.47272
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.41176,
+          "precision@5": 0.16471,
+          "complete_coverage@5": 0.23529,
+          "ndcg@5": 0.35245,
+          "recall@10": 0.58824,
+          "precision@10": 0.11765,
+          "complete_coverage@10": 0.41176,
+          "ndcg@10": 0.42378
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.29412,
+          "precision@5": 0.11765,
+          "complete_coverage@5": 0.05882,
+          "ndcg@5": 0.25576,
+          "recall@10": 0.52941,
+          "precision@10": 0.10588,
+          "complete_coverage@10": 0.35294,
+          "ndcg@10": 0.35006
+        }
+      }
+    }
+  },
+  "by_gold_count": {
+    "1": {
+      "n": 15,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.93333,
+          "precision@5": 0.18667,
+          "complete_coverage@5": 0.93333,
+          "ndcg@5": 0.83491,
+          "recall@10": 0.93333,
+          "precision@10": 0.09333,
+          "complete_coverage@10": 0.93333,
+          "ndcg@10": 0.83491
+        },
+        "dense": {
+          "recall@5": 0.93333,
+          "precision@5": 0.18667,
+          "complete_coverage@5": 0.93333,
+          "ndcg@5": 0.7607,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "complete_coverage@10": 1.0,
+          "ndcg@10": 0.78445
+        },
+        "hybrid_rrf": {
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "complete_coverage@5": 1.0,
+          "ndcg@5": 0.86363,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "complete_coverage@10": 1.0,
+          "ndcg@10": 0.86363
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.86667,
+          "precision@5": 0.17333,
+          "complete_coverage@5": 0.86667,
+          "ndcg@5": 0.73491,
+          "recall@10": 0.86667,
+          "precision@10": 0.08667,
+          "complete_coverage@10": 0.86667,
+          "ndcg@10": 0.73491
+        }
+      }
+    },
+    "2": {
+      "n": 25,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.28,
+          "precision@5": 0.112,
+          "complete_coverage@5": 0.12,
+          "ndcg@5": 0.27037,
+          "recall@10": 0.4,
+          "precision@10": 0.08,
+          "complete_coverage@10": 0.2,
+          "ndcg@10": 0.31931
+        },
+        "dense": {
+          "recall@5": 0.36,
+          "precision@5": 0.144,
+          "complete_coverage@5": 0.08,
+          "ndcg@5": 0.29802,
+          "recall@10": 0.64,
+          "precision@10": 0.128,
+          "complete_coverage@10": 0.44,
+          "ndcg@10": 0.40964
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.4,
+          "precision@5": 0.16,
+          "complete_coverage@5": 0.16,
+          "ndcg@5": 0.34079,
+          "recall@10": 0.58,
+          "precision@10": 0.116,
+          "complete_coverage@10": 0.4,
+          "ndcg@10": 0.4133
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.28,
+          "precision@5": 0.112,
+          "complete_coverage@5": 0.08,
+          "ndcg@5": 0.22278,
+          "recall@10": 0.46,
+          "precision@10": 0.092,
+          "complete_coverage@10": 0.28,
+          "ndcg@10": 0.29399
+        }
+      }
+    },
+    "3": {
+      "n": 8,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.125,
+          "precision@5": 0.075,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.10662,
+          "recall@10": 0.20833,
+          "precision@10": 0.0625,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.14447
+        },
+        "dense": {
+          "recall@5": 0.33333,
+          "precision@5": 0.2,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.36732,
+          "recall@10": 0.375,
+          "precision@10": 0.1125,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.38428
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.20833,
+          "precision@5": 0.125,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.23464,
+          "recall@10": 0.5,
+          "precision@10": 0.15,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.36845
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.16667,
+          "precision@5": 0.1,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.17191,
+          "recall@10": 0.29167,
+          "precision@10": 0.0875,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.22672
+        }
+      }
+    },
+    "4": {
+      "n": 1,
+      "metrics": {
+        "bm25": {
+          "recall@5": 0.0,
+          "precision@5": 0.0,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.0,
+          "recall@10": 0.25,
+          "precision@10": 0.1,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.11752
+        },
+        "dense": {
+          "recall@5": 0.25,
+          "precision@5": 0.2,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.16813,
+          "recall@10": 0.75,
+          "precision@10": 0.3,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.42003
+        },
+        "hybrid_rrf": {
+          "recall@5": 0.25,
+          "precision@5": 0.2,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.19519,
+          "recall@10": 0.5,
+          "precision@10": 0.2,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.31271
+        },
+        "hybrid_cross_encoder": {
+          "recall@5": 0.25,
+          "precision@5": 0.2,
+          "complete_coverage@5": 0.0,
+          "ndcg@5": 0.16813,
+          "recall@10": 0.5,
+          "precision@10": 0.2,
+          "complete_coverage@10": 0.0,
+          "ndcg@10": 0.29825
+        }
+      }
+    }
+  }
+}

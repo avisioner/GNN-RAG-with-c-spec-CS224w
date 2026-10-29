@@ -1,0 +1,73 @@
+{
+  "chunks": "D:\\Stanford\\2026 fall\\cs224w\\project\\data\\processed\\chunks.jsonl",
+  "queries": "D:\\Stanford\\2026 fall\\cs224w\\project\\data\\benchmark\\spec_benchmark_v1.jsonl",
+  "graph": null,
+  "output_dir": "D:\\Stanford\\2026 fall\\cs224w\\project\\baseline\\specgraph_baselines\\results_ablation_question",
+  "methods": [
+    "bm25",
+    "dense",
+    "hybrid_rrf_d1",
+    "hybrid_rrf_d2",
+    "hybrid_rrf_d3"
+  ],
+  "dense_backend": "exact",
+  "chroma_dir": ".chroma_specgraph",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "rerank": false,
+  "lexical_mode": "content",
+  "threads": 4,
+  "query_mode": "question",
+  "dense_weight": 1.0,
+  "rrf_k": 60,
+  "dry_run": false,
+  "self_test": false,
+  "top_k": [
+    5,
+    10,
+    50
+  ],
+  "candidate_k": 50,
+  "effective_candidate_k": 50,
+  "evaluation_unit": "distinct_clause",
+  "evidence_unit": "best_chunk",
+  "bm25": {
+    "idf": "log1p((N-df+0.5)/(df+0.5))",
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "created_at_utc": "2026-10-29T01:17:19.611736+00:00",
+  "packages": {
+    "numpy": "2.5.4",
+    "sentence-transformers": "5.7.0",
+    "chromadb": null,
+    "torch": "2.15.0+cpu"
+  },
+  "input_sha256": {
+    "chunks": "8dde85cbed9ab15256a8bf10b9bd38946dfbf5f7ed0e46a56ef0de44c7ca5c35",
+    "queries": "a279fbc70a3a4b293735b4b8d22a8f744fb147931b91807f95593aca5add7945",
+    "script": "eced82e19c8f6ab17c88520463b1d6c7d507188f8645e3e9520c00cd4a35fadc"
+  },
+  "source_run": "D:\\Stanford\\2026 fall\\cs224w\\project\\baseline\\specgraph_baselines\\results_question_only",
+  "fusion_weights_by_method": {
+    "hybrid_rrf_d1": {
+      "bm25": 1,
+      "dense": 1
+    },
+    "hybrid_rrf_d2": {
+      "bm25": 1,
+      "dense": 2
+    },
+    "hybrid_rrf_d3": {
+      "bm25": 1,
+      "dense": 3
+    }
+  },
+  "replay_script_sha256": "01cac2d61fac304bedd8c04ba5a987d9f1a2a2098cdff687e2d72c7f0e244681",
+  "source_rankings_sha256": "45b3cad892f57c2ed1688dc959b24c53c86ac572b0d306c56cc2e7562adb03f3",
+  "source_config_sha256": "219084d06c487109b25d652cf3112f500af11b786bbeba78d33c4128e5c79436",
+  "replayed_at_utc": "2026-10-29T01:18:18.126251+00:00",
+  "replayed_evidence_policy": "highest weighted clause-rank contribution; dense wins ties",
+  "reranker_note": "Any cross-encoder result is copied from the original equal-weight run, not rerun for new weights"
+}

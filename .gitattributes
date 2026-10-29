@@ -1,0 +1,2 @@
+# Preserve exact bytes so input and executed-source SHA-256 hashes survive clones.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

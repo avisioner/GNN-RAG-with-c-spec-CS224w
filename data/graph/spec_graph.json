@@ -1,0 +1,2812 @@
+{
+  "graph_version": "1.0",
+  "spec_edition": "N4950",
+  "nodes": [
+    {
+      "node_id": "clause:basic.lval",
+      "node_type": "clause",
+      "clause_id": "basic.lval",
+      "title": "Value category",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv.array",
+      "node_type": "clause",
+      "clause_id": "conv.array",
+      "title": "Array-to-pointer conversion",
+      "chunk_id": "clause:conv.array"
+    },
+    {
+      "node_id": "clause:conv.bool",
+      "node_type": "clause",
+      "clause_id": "conv.bool",
+      "title": "Boolean conversions",
+      "chunk_id": "clause:conv.bool"
+    },
+    {
+      "node_id": "clause:conv.double",
+      "node_type": "clause",
+      "clause_id": "conv.double",
+      "title": "Floating-point conversions",
+      "chunk_id": "clause:conv.double"
+    },
+    {
+      "node_id": "clause:conv.fctptr",
+      "node_type": "clause",
+      "clause_id": "conv.fctptr",
+      "title": "Function pointer conversions",
+      "chunk_id": "clause:conv.fctptr"
+    },
+    {
+      "node_id": "clause:conv.fpint",
+      "node_type": "clause",
+      "clause_id": "conv.fpint",
+      "title": "Floating-integral conversions",
+      "chunk_id": "clause:conv.fpint"
+    },
+    {
+      "node_id": "clause:conv.fpprom",
+      "node_type": "clause",
+      "clause_id": "conv.fpprom",
+      "title": "Floating-point promotion",
+      "chunk_id": "clause:conv.fpprom"
+    },
+    {
+      "node_id": "clause:conv.func",
+      "node_type": "clause",
+      "clause_id": "conv.func",
+      "title": "Function-to-pointer conversion",
+      "chunk_id": "clause:conv.func"
+    },
+    {
+      "node_id": "clause:conv.general",
+      "node_type": "clause",
+      "clause_id": "conv.general",
+      "title": "General",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv.integral",
+      "node_type": "clause",
+      "clause_id": "conv.integral",
+      "title": "Integral conversions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv.lval",
+      "node_type": "clause",
+      "clause_id": "conv.lval",
+      "title": "Lvalue-to-rvalue conversion",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv.mem",
+      "node_type": "clause",
+      "clause_id": "conv.mem",
+      "title": "Pointer-to-member conversions",
+      "chunk_id": "clause:conv.mem"
+    },
+    {
+      "node_id": "clause:conv.prom",
+      "node_type": "clause",
+      "clause_id": "conv.prom",
+      "title": "Integral promotions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv.ptr",
+      "node_type": "clause",
+      "clause_id": "conv.ptr",
+      "title": "Pointer conversions",
+      "chunk_id": "clause:conv.ptr"
+    },
+    {
+      "node_id": "clause:conv.qual",
+      "node_type": "clause",
+      "clause_id": "conv.qual",
+      "title": "Qualification conversions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv.rval",
+      "node_type": "clause",
+      "clause_id": "conv.rval",
+      "title": "Temporary materialization conversion",
+      "chunk_id": "clause:conv.rval"
+    },
+    {
+      "node_id": "clause:expr.add",
+      "node_type": "clause",
+      "clause_id": "expr.add",
+      "title": "Additive operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.alignof",
+      "node_type": "clause",
+      "clause_id": "expr.alignof",
+      "title": "Alignof",
+      "chunk_id": "clause:expr.alignof"
+    },
+    {
+      "node_id": "clause:expr.arith.conv",
+      "node_type": "clause",
+      "clause_id": "expr.arith.conv",
+      "title": "Usual arithmetic conversions",
+      "chunk_id": "clause:expr.arith.conv"
+    },
+    {
+      "node_id": "clause:expr.ass",
+      "node_type": "clause",
+      "clause_id": "expr.ass",
+      "title": "Assignment and compound assignment operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.await",
+      "node_type": "clause",
+      "clause_id": "expr.await",
+      "title": "Await",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.bit.and",
+      "node_type": "clause",
+      "clause_id": "expr.bit.and",
+      "title": "Bitwise AND operator",
+      "chunk_id": "clause:expr.bit.and"
+    },
+    {
+      "node_id": "clause:expr.call",
+      "node_type": "clause",
+      "clause_id": "expr.call",
+      "title": "Function call",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.cast",
+      "node_type": "clause",
+      "clause_id": "expr.cast",
+      "title": "Explicit type conversion (cast notation)",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.comma",
+      "node_type": "clause",
+      "clause_id": "expr.comma",
+      "title": "Comma operator",
+      "chunk_id": "clause:expr.comma"
+    },
+    {
+      "node_id": "clause:expr.cond",
+      "node_type": "clause",
+      "clause_id": "expr.cond",
+      "title": "Conditional operator",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.const",
+      "node_type": "clause",
+      "clause_id": "expr.const",
+      "title": "Constant expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.const.cast",
+      "node_type": "clause",
+      "clause_id": "expr.const.cast",
+      "title": "Const cast",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.context",
+      "node_type": "clause",
+      "clause_id": "expr.context",
+      "title": "Context dependence",
+      "chunk_id": "clause:expr.context"
+    },
+    {
+      "node_id": "clause:expr.delete",
+      "node_type": "clause",
+      "clause_id": "expr.delete",
+      "title": "Delete",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.dynamic.cast",
+      "node_type": "clause",
+      "clause_id": "expr.dynamic.cast",
+      "title": "Dynamic cast",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.eq",
+      "node_type": "clause",
+      "clause_id": "expr.eq",
+      "title": "Equality operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.log.and",
+      "node_type": "clause",
+      "clause_id": "expr.log.and",
+      "title": "Logical AND operator",
+      "chunk_id": "clause:expr.log.and"
+    },
+    {
+      "node_id": "clause:expr.log.or",
+      "node_type": "clause",
+      "clause_id": "expr.log.or",
+      "title": "Logical OR operator",
+      "chunk_id": "clause:expr.log.or"
+    },
+    {
+      "node_id": "clause:expr.mptr.oper",
+      "node_type": "clause",
+      "clause_id": "expr.mptr.oper",
+      "title": "Pointer-to-member operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.mul",
+      "node_type": "clause",
+      "clause_id": "expr.mul",
+      "title": "Multiplicative operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.new",
+      "node_type": "clause",
+      "clause_id": "expr.new",
+      "title": "New",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.or",
+      "node_type": "clause",
+      "clause_id": "expr.or",
+      "title": "Bitwise inclusive OR operator",
+      "chunk_id": "clause:expr.or"
+    },
+    {
+      "node_id": "clause:expr.post.general",
+      "node_type": "clause",
+      "clause_id": "expr.post.general",
+      "title": "General",
+      "chunk_id": "clause:expr.post.general"
+    },
+    {
+      "node_id": "clause:expr.post.incr",
+      "node_type": "clause",
+      "clause_id": "expr.post.incr",
+      "title": "Increment and decrement",
+      "chunk_id": "clause:expr.post.incr"
+    },
+    {
+      "node_id": "clause:expr.pre",
+      "node_type": "clause",
+      "clause_id": "expr.pre",
+      "title": "Preamble",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.pre.incr",
+      "node_type": "clause",
+      "clause_id": "expr.pre.incr",
+      "title": "Increment and decrement",
+      "chunk_id": "clause:expr.pre.incr"
+    },
+    {
+      "node_id": "clause:expr.prim.fold",
+      "node_type": "clause",
+      "clause_id": "expr.prim.fold",
+      "title": "Fold expressions",
+      "chunk_id": "clause:expr.prim.fold"
+    },
+    {
+      "node_id": "clause:expr.prim.id.dtor",
+      "node_type": "clause",
+      "clause_id": "expr.prim.id.dtor",
+      "title": "Destruction",
+      "chunk_id": "clause:expr.prim.id.dtor"
+    },
+    {
+      "node_id": "clause:expr.prim.id.general",
+      "node_type": "clause",
+      "clause_id": "expr.prim.id.general",
+      "title": "General",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.id.qual",
+      "node_type": "clause",
+      "clause_id": "expr.prim.id.qual",
+      "title": "Qualified names",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.id.unqual",
+      "node_type": "clause",
+      "clause_id": "expr.prim.id.unqual",
+      "title": "Unqualified names",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.lambda.capture",
+      "node_type": "clause",
+      "clause_id": "expr.prim.lambda.capture",
+      "title": "Captures",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.lambda.closure",
+      "node_type": "clause",
+      "clause_id": "expr.prim.lambda.closure",
+      "title": "Closure types",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.lambda.general",
+      "node_type": "clause",
+      "clause_id": "expr.prim.lambda.general",
+      "title": "General",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.literal",
+      "node_type": "clause",
+      "clause_id": "expr.prim.literal",
+      "title": "Literals",
+      "chunk_id": "clause:expr.prim.literal"
+    },
+    {
+      "node_id": "clause:expr.prim.paren",
+      "node_type": "clause",
+      "clause_id": "expr.prim.paren",
+      "title": "Parentheses",
+      "chunk_id": "clause:expr.prim.paren"
+    },
+    {
+      "node_id": "clause:expr.prim.req.compound",
+      "node_type": "clause",
+      "clause_id": "expr.prim.req.compound",
+      "title": "Compound requirements",
+      "chunk_id": "clause:expr.prim.req.compound"
+    },
+    {
+      "node_id": "clause:expr.prim.req.general",
+      "node_type": "clause",
+      "clause_id": "expr.prim.req.general",
+      "title": "General",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.req.nested",
+      "node_type": "clause",
+      "clause_id": "expr.prim.req.nested",
+      "title": "Nested requirements",
+      "chunk_id": "clause:expr.prim.req.nested"
+    },
+    {
+      "node_id": "clause:expr.prim.req.simple",
+      "node_type": "clause",
+      "clause_id": "expr.prim.req.simple",
+      "title": "Simple requirements",
+      "chunk_id": "clause:expr.prim.req.simple"
+    },
+    {
+      "node_id": "clause:expr.prim.req.type",
+      "node_type": "clause",
+      "clause_id": "expr.prim.req.type",
+      "title": "Type requirements",
+      "chunk_id": "clause:expr.prim.req.type"
+    },
+    {
+      "node_id": "clause:expr.prim.this",
+      "node_type": "clause",
+      "clause_id": "expr.prim.this",
+      "title": "This",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.ref",
+      "node_type": "clause",
+      "clause_id": "expr.ref",
+      "title": "Class member access",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.reinterpret.cast",
+      "node_type": "clause",
+      "clause_id": "expr.reinterpret.cast",
+      "title": "Reinterpret cast",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.rel",
+      "node_type": "clause",
+      "clause_id": "expr.rel",
+      "title": "Relational operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.shift",
+      "node_type": "clause",
+      "clause_id": "expr.shift",
+      "title": "Shift operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.sizeof",
+      "node_type": "clause",
+      "clause_id": "expr.sizeof",
+      "title": "Sizeof",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.spaceship",
+      "node_type": "clause",
+      "clause_id": "expr.spaceship",
+      "title": "Three-way comparison operator",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.static.cast",
+      "node_type": "clause",
+      "clause_id": "expr.static.cast",
+      "title": "Static cast",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.sub",
+      "node_type": "clause",
+      "clause_id": "expr.sub",
+      "title": "Subscripting",
+      "chunk_id": "clause:expr.sub"
+    },
+    {
+      "node_id": "clause:expr.throw",
+      "node_type": "clause",
+      "clause_id": "expr.throw",
+      "title": "Throwing an exception",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.type",
+      "node_type": "clause",
+      "clause_id": "expr.type",
+      "title": "Type",
+      "chunk_id": "clause:expr.type"
+    },
+    {
+      "node_id": "clause:expr.type.conv",
+      "node_type": "clause",
+      "clause_id": "expr.type.conv",
+      "title": "Explicit type conversion (functional notation)",
+      "chunk_id": "clause:expr.type.conv"
+    },
+    {
+      "node_id": "clause:expr.typeid",
+      "node_type": "clause",
+      "clause_id": "expr.typeid",
+      "title": "Type identification",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.unary.general",
+      "node_type": "clause",
+      "clause_id": "expr.unary.general",
+      "title": "General",
+      "chunk_id": "clause:expr.unary.general"
+    },
+    {
+      "node_id": "clause:expr.unary.noexcept",
+      "node_type": "clause",
+      "clause_id": "expr.unary.noexcept",
+      "title": "noexcept operator",
+      "chunk_id": "clause:expr.unary.noexcept"
+    },
+    {
+      "node_id": "clause:expr.unary.op",
+      "node_type": "clause",
+      "clause_id": "expr.unary.op",
+      "title": "Unary operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.xor",
+      "node_type": "clause",
+      "clause_id": "expr.xor",
+      "title": "Bitwise exclusive OR operator",
+      "chunk_id": "clause:expr.xor"
+    },
+    {
+      "node_id": "clause:expr.yield",
+      "node_type": "clause",
+      "clause_id": "expr.yield",
+      "title": "Yielding a value",
+      "chunk_id": "clause:expr.yield"
+    },
+    {
+      "node_id": "clause:intro.execution",
+      "node_type": "clause",
+      "clause_id": "intro.execution",
+      "title": "Sequential execution",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:intro.memory",
+      "node_type": "clause",
+      "clause_id": "intro.memory",
+      "title": "Memory model",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:intro.multithread.general",
+      "node_type": "clause",
+      "clause_id": "intro.multithread.general",
+      "title": "General",
+      "chunk_id": "clause:intro.multithread.general"
+    },
+    {
+      "node_id": "clause:intro.races",
+      "node_type": "clause",
+      "clause_id": "intro.races",
+      "title": "Data races",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:over.built",
+      "node_type": "clause",
+      "clause_id": "over.built",
+      "title": "Built-in operators",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:over.match.oper",
+      "node_type": "clause",
+      "clause_id": "over.match.oper",
+      "title": "Operators in expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:over.oper.general",
+      "node_type": "clause",
+      "clause_id": "over.oper.general",
+      "title": "General",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:basic.exec",
+      "node_type": "container",
+      "clause_id": "basic.exec",
+      "title": "",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:basic.memobj",
+      "node_type": "container",
+      "clause_id": "basic.memobj",
+      "title": "",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:conv",
+      "node_type": "container",
+      "clause_id": "conv",
+      "title": "Standard conversions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr",
+      "node_type": "container",
+      "clause_id": "expr",
+      "title": "",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.compound",
+      "node_type": "container",
+      "clause_id": "expr.compound",
+      "title": "Compound expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.post",
+      "node_type": "container",
+      "clause_id": "expr.post",
+      "title": "",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim",
+      "node_type": "container",
+      "clause_id": "expr.prim",
+      "title": "",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.id",
+      "node_type": "container",
+      "clause_id": "expr.prim.id",
+      "title": "Names",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.lambda",
+      "node_type": "container",
+      "clause_id": "expr.prim.lambda",
+      "title": "Lambda expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prim.req",
+      "node_type": "container",
+      "clause_id": "expr.prim.req",
+      "title": "Requires expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.prop",
+      "node_type": "container",
+      "clause_id": "expr.prop",
+      "title": "Properties of expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:expr.unary",
+      "node_type": "container",
+      "clause_id": "expr.unary",
+      "title": "Unary expressions",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:intro.multithread",
+      "node_type": "container",
+      "clause_id": "intro.multithread",
+      "title": "Multi-threaded executions and data races",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:over",
+      "node_type": "container",
+      "clause_id": "over",
+      "title": "Overloading",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:over.match.funcs",
+      "node_type": "container",
+      "clause_id": "over.match.funcs",
+      "title": "",
+      "chunk_id": null
+    },
+    {
+      "node_id": "clause:over.oper",
+      "node_type": "container",
+      "clause_id": "over.oper",
+      "title": "Overloaded operators",
+      "chunk_id": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.prop",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.array",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.bool",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.double",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.fctptr",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.fpint",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.fpprom",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.func",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.general",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.integral",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.lval",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.mem",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.prom",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.ptr",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.qual",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.rval",
+      "target": "clause:conv",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.add",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.alignof",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.arith.conv",
+      "target": "clause:expr",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ass",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.await",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.bit.and",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cast",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.comma",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.prop",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.delete",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.dynamic.cast",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.log.and",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.log.or",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.mptr.oper",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.mul",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.new",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.or",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.post.general",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.post.incr",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:expr",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre.incr",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.fold",
+      "target": "clause:expr.prim",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.dtor",
+      "target": "clause:expr.prim.id",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.general",
+      "target": "clause:expr.prim.id",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.qual",
+      "target": "clause:expr.prim.id",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.prim.id",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.lambda.capture",
+      "target": "clause:expr.prim.lambda",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.lambda.closure",
+      "target": "clause:expr.prim.lambda",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.lambda.general",
+      "target": "clause:expr.prim.lambda",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.literal",
+      "target": "clause:expr.prim",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.paren",
+      "target": "clause:expr.prim",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.req.compound",
+      "target": "clause:expr.prim.req",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.req.general",
+      "target": "clause:expr.prim.req",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.req.nested",
+      "target": "clause:expr.prim.req",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.req.simple",
+      "target": "clause:expr.prim.req",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.req.type",
+      "target": "clause:expr.prim.req",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.this",
+      "target": "clause:expr.prim",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ref",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.shift",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sub",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.throw",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.type",
+      "target": "clause:expr.prop",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.type.conv",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.typeid",
+      "target": "clause:expr.post",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.general",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.noexcept",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.op",
+      "target": "clause:expr.unary",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.xor",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.yield",
+      "target": "clause:expr.compound",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:basic.exec",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.memory",
+      "target": "clause:basic.memobj",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.multithread.general",
+      "target": "clause:intro.multithread",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.races",
+      "target": "clause:intro.multithread",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:over",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:over.match.funcs",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.oper.general",
+      "target": "clause:over.oper",
+      "edge_type": "parent",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:conv.prom",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.ass",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.compound",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.const.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.context",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.dynamic.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.mptr.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.post.incr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.pre.incr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.prim.id.unqual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.reinterpret.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.static.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.sub",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.type",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:basic.lval",
+      "target": "clause:expr.type.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.array",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.fpint",
+      "target": "clause:conv.bool",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.general",
+      "target": "clause:expr.compound",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.integral",
+      "target": "clause:conv.bool",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.lval",
+      "target": "clause:basic.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.lval",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.lval",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.mem",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.mem",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:conv.ptr",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.add",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.add",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.alignof",
+      "target": "clause:expr.const",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.arith.conv",
+      "target": "clause:conv.prom",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ass",
+      "target": "clause:basic.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ass",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.await",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.await",
+      "target": "clause:expr.yield",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.await",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.await",
+      "target": "clause:over.match.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.bit.and",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.fctptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.fpprom",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.prom",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:expr.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:expr.prim.id.dtor",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:expr.prim.this",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:expr.shift",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.call",
+      "target": "clause:over.match.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cast",
+      "target": "clause:expr.const.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cast",
+      "target": "clause:expr.prop",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cast",
+      "target": "clause:expr.reinterpret.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cast",
+      "target": "clause:expr.static.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cast",
+      "target": "clause:expr.type.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.comma",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.comma",
+      "target": "clause:expr.sub",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.comma",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.fctptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.mem",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:expr.throw",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:expr.type",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:over.built",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.cond",
+      "target": "clause:over.match.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv.fctptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv.integral",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.add",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.ass",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.await",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.delete",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.dynamic.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.eq",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.mul",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.new",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.post.incr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.pre",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.pre.incr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.prim.lambda",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.prim.lambda.capture",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.prim.this",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.reinterpret.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.rel",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.shift",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.spaceship",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.throw",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.typeid",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:expr.yield",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:conv.mem",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.const.cast",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.comma",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.cond",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.mptr.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.prim.id",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.prim.req",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.sizeof",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.sub",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.typeid",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.context",
+      "target": "clause:expr.unary.noexcept",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.delete",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.delete",
+      "target": "clause:expr.const.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.delete",
+      "target": "clause:expr.new",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.dynamic.cast",
+      "target": "clause:expr.const.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.fctptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.mem",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.eq",
+      "target": "clause:expr.type",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.log.and",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.log.and",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.log.or",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.log.or",
+      "target": "clause:intro.execution",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.mptr.oper",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.mul",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.new",
+      "target": "clause:expr.const",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.new",
+      "target": "clause:expr.delete",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.or",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.post.incr",
+      "target": "clause:expr.add",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.post.incr",
+      "target": "clause:expr.ass",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.post.incr",
+      "target": "clause:expr.pre.incr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:expr.ass",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:expr.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:expr.compound",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:expr.static.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:expr.type.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:over.built",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:over.match.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre",
+      "target": "clause:over.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre.incr",
+      "target": "clause:expr.add",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre.incr",
+      "target": "clause:expr.ass",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.pre.incr",
+      "target": "clause:expr.post.incr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.dtor",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.dtor",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.general",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.general",
+      "target": "clause:expr.unary.op",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:basic.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.prim.id.dtor",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.prim.id.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.prim.lambda.capture",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.throw",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:expr.type",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.id.unqual",
+      "target": "clause:over.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.lambda.capture",
+      "target": "clause:expr.typeid",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.lambda.capture",
+      "target": "clause:expr.unary.op",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.prim.this",
+      "target": "clause:expr.ref",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ref",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ref",
+      "target": "clause:expr.prim.id.dtor",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.ref",
+      "target": "clause:expr.prim.paren",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:conv.mem",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.reinterpret.cast",
+      "target": "clause:expr.const.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.rel",
+      "target": "clause:expr.eq",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:expr.const",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sizeof",
+      "target": "clause:intro.memory",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:expr.eq",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:expr.rel",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.spaceship",
+      "target": "clause:expr.type",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:basic.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.bool",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.fctptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.fpint",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.integral",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.mem",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.prom",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:conv.ptr",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:expr.const.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:expr.mptr.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.static.cast",
+      "target": "clause:expr.prop",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sub",
+      "target": "clause:expr.add",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.sub",
+      "target": "clause:expr.unary",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.type",
+      "target": "clause:conv.qual",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.type.conv",
+      "target": "clause:expr.cast",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.typeid",
+      "target": "clause:conv.array",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.typeid",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.typeid",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.typeid",
+      "target": "clause:conv.rval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.noexcept",
+      "target": "clause:expr.const",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.op",
+      "target": "clause:conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.op",
+      "target": "clause:conv.func",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.op",
+      "target": "clause:conv.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.op",
+      "target": "clause:intro.memory",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.unary.op",
+      "target": "clause:over",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.xor",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:expr.yield",
+      "target": "clause:expr.await",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:basic.lval",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:expr.await",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:expr.const",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:expr.new",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:expr.prim.lambda",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:expr.prop",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:intro.memory",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.execution",
+      "target": "clause:intro.multithread",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.races",
+      "target": "clause:expr.comma",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.races",
+      "target": "clause:expr.cond",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.races",
+      "target": "clause:expr.log.and",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.races",
+      "target": "clause:expr.log.or",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:intro.races",
+      "target": "clause:intro.memory",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:conv.prom",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:expr.arith.conv",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:expr.compound",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:expr.mptr.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:expr.spaceship",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.built",
+      "target": "clause:over.match.oper",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:expr.compound",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:expr.cond",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:expr.eq",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:expr.rel",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:expr.spaceship",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.match.oper",
+      "target": "clause:over.built",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.oper.general",
+      "target": "clause:expr.await",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.oper.general",
+      "target": "clause:expr.call",
+      "edge_type": "references",
+      "provenance": "automatic"
+    },
+    {
+      "source": "clause:over.oper.general",
+      "target": "clause:expr.sub",
+      "edge_type": "references",
+      "provenance": "automatic"
+    }
+  ]
+}

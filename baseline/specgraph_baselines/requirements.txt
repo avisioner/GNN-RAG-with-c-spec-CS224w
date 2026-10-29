@@ -1,0 +1,5 @@
+# BM25, validation and tests require no third-party packages.
+# encode_query / encode_document require Sentence Transformers 5+.
+numpy>=1.26,<3
+sentence-transformers>=5,<6
+# Optional persistent backend: python -m pip install "chromadb>=1.0,<2"
