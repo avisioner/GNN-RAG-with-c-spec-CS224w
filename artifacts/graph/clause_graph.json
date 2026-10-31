@@ -1,0 +1,6083 @@
+{
+  "version": "milestone-1",
+  "source": "data/processed/chunks.jsonl",
+  "node_order": "sorted clause_id",
+  "edge_types": [
+    "references",
+    "parent",
+    "sibling",
+    "references_plain",
+    "references_general"
+  ],
+  "undirected_edge_types": [
+    "sibling"
+  ],
+  "default_edge_types": [
+    "references",
+    "parent",
+    "sibling"
+  ],
+  "nodes": [
+    {
+      "clause_id": "basic.lval",
+      "title": "Value category",
+      "section_id": "expr",
+      "parent_clause": "expr.prop",
+      "n_chunks": 11
+    },
+    {
+      "clause_id": "conv.array",
+      "title": "Array-to-pointer conversion",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.bool",
+      "title": "Boolean conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.double",
+      "title": "Floating-point conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.fctptr",
+      "title": "Function pointer conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.fpint",
+      "title": "Floating-integral conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.fpprom",
+      "title": "Floating-point promotion",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.func",
+      "title": "Function-to-pointer conversion",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.general",
+      "title": "General",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 8
+    },
+    {
+      "clause_id": "conv.integral",
+      "title": "Integral conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "conv.lval",
+      "title": "Lvalue-to-rvalue conversion",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "conv.mem",
+      "title": "Pointer-to-member conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.prom",
+      "title": "Integral promotions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 7
+    },
+    {
+      "clause_id": "conv.ptr",
+      "title": "Pointer conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "conv.qual",
+      "title": "Qualification conversions",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "conv.rval",
+      "title": "Temporary materialization conversion",
+      "section_id": "expr",
+      "parent_clause": "conv",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.add",
+      "title": "Additive operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 6
+    },
+    {
+      "clause_id": "expr.alignof",
+      "title": "Alignof",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.arith.conv",
+      "title": "Usual arithmetic conversions",
+      "section_id": "expr",
+      "parent_clause": "expr",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.ass",
+      "title": "Assignment and compound assignment operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 8
+    },
+    {
+      "clause_id": "expr.await",
+      "title": "Await",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 6
+    },
+    {
+      "clause_id": "expr.bit.and",
+      "title": "Bitwise AND operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.call",
+      "title": "Function call",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 13
+    },
+    {
+      "clause_id": "expr.cast",
+      "title": "Explicit type conversion (cast notation)",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "expr.comma",
+      "title": "Comma operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.cond",
+      "title": "Conditional operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 7
+    },
+    {
+      "clause_id": "expr.const",
+      "title": "Constant expressions",
+      "section_id": "expr",
+      "parent_clause": "expr",
+      "n_chunks": 20
+    },
+    {
+      "clause_id": "expr.const.cast",
+      "title": "Const cast",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 9
+    },
+    {
+      "clause_id": "expr.context",
+      "title": "Context dependence",
+      "section_id": "expr",
+      "parent_clause": "expr.prop",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.delete",
+      "title": "Delete",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 12
+    },
+    {
+      "clause_id": "expr.dynamic.cast",
+      "title": "Dynamic cast",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 9
+    },
+    {
+      "clause_id": "expr.eq",
+      "title": "Equality operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 7
+    },
+    {
+      "clause_id": "expr.log.and",
+      "title": "Logical AND operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.log.or",
+      "title": "Logical OR operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.mptr.oper",
+      "title": "Pointer-to-member operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 6
+    },
+    {
+      "clause_id": "expr.mul",
+      "title": "Multiplicative operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "expr.new",
+      "title": "New",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 29
+    },
+    {
+      "clause_id": "expr.or",
+      "title": "Bitwise inclusive OR operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.post.general",
+      "title": "General",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.post.incr",
+      "title": "Increment and decrement",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.pre",
+      "title": "Preamble",
+      "section_id": "expr",
+      "parent_clause": "expr",
+      "n_chunks": 6
+    },
+    {
+      "clause_id": "expr.pre.incr",
+      "title": "Increment and decrement",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.fold",
+      "title": "Fold expressions",
+      "section_id": "expr",
+      "parent_clause": "expr.prim",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.id.dtor",
+      "title": "Destruction",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.id",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.id.general",
+      "title": "General",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.id",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "expr.prim.id.qual",
+      "title": "Qualified names",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.id",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "expr.prim.id.unqual",
+      "title": "Unqualified names",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.id",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "expr.prim.lambda.capture",
+      "title": "Captures",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.lambda",
+      "n_chunks": 17
+    },
+    {
+      "clause_id": "expr.prim.lambda.closure",
+      "title": "Closure types",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.lambda",
+      "n_chunks": 16
+    },
+    {
+      "clause_id": "expr.prim.lambda.general",
+      "title": "General",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.lambda",
+      "n_chunks": 6
+    },
+    {
+      "clause_id": "expr.prim.literal",
+      "title": "Literals",
+      "section_id": "expr",
+      "parent_clause": "expr.prim",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.paren",
+      "title": "Parentheses",
+      "section_id": "expr",
+      "parent_clause": "expr.prim",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.req.compound",
+      "title": "Compound requirements",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.req",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.req.general",
+      "title": "General",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.req",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "expr.prim.req.nested",
+      "title": "Nested requirements",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.req",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.req.simple",
+      "title": "Simple requirements",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.req",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.req.type",
+      "title": "Type requirements",
+      "section_id": "expr",
+      "parent_clause": "expr.prim.req",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.prim.this",
+      "title": "This",
+      "section_id": "expr",
+      "parent_clause": "expr.prim",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "expr.ref",
+      "title": "Class member access",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 8
+    },
+    {
+      "clause_id": "expr.reinterpret.cast",
+      "title": "Reinterpret cast",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 11
+    },
+    {
+      "clause_id": "expr.rel",
+      "title": "Relational operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 6
+    },
+    {
+      "clause_id": "expr.shift",
+      "title": "Shift operators",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "expr.sizeof",
+      "title": "Sizeof",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "expr.spaceship",
+      "title": "Three-way comparison operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 8
+    },
+    {
+      "clause_id": "expr.static.cast",
+      "title": "Static cast",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 14
+    },
+    {
+      "clause_id": "expr.sub",
+      "title": "Subscripting",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.throw",
+      "title": "Throwing an exception",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 4
+    },
+    {
+      "clause_id": "expr.type",
+      "title": "Type",
+      "section_id": "expr",
+      "parent_clause": "expr.prop",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.type.conv",
+      "title": "Explicit type conversion (functional notation)",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.typeid",
+      "title": "Type identification",
+      "section_id": "expr",
+      "parent_clause": "expr.post",
+      "n_chunks": 8
+    },
+    {
+      "clause_id": "expr.unary.general",
+      "title": "General",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.unary.noexcept",
+      "title": "noexcept operator",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.unary.op",
+      "title": "Unary operators",
+      "section_id": "expr",
+      "parent_clause": "expr.unary",
+      "n_chunks": 10
+    },
+    {
+      "clause_id": "expr.xor",
+      "title": "Bitwise exclusive OR operator",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "expr.yield",
+      "title": "Yielding a value",
+      "section_id": "expr",
+      "parent_clause": "expr.compound",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "intro.execution",
+      "title": "Sequential execution",
+      "section_id": "basic",
+      "parent_clause": "basic.exec",
+      "n_chunks": 12
+    },
+    {
+      "clause_id": "intro.memory",
+      "title": "Memory model",
+      "section_id": "basic",
+      "parent_clause": "basic.memobj",
+      "n_chunks": 5
+    },
+    {
+      "clause_id": "intro.multithread.general",
+      "title": "General",
+      "section_id": "basic",
+      "parent_clause": "intro.multithread",
+      "n_chunks": 1
+    },
+    {
+      "clause_id": "intro.races",
+      "title": "Data races",
+      "section_id": "basic",
+      "parent_clause": "intro.multithread",
+      "n_chunks": 24
+    },
+    {
+      "clause_id": "over.built",
+      "title": "Built-in operators",
+      "section_id": "over",
+      "parent_clause": "over",
+      "n_chunks": 25
+    },
+    {
+      "clause_id": "over.match.oper",
+      "title": "Operators in expressions",
+      "section_id": "over",
+      "parent_clause": "over.match.funcs",
+      "n_chunks": 14
+    },
+    {
+      "clause_id": "over.oper.general",
+      "title": "General",
+      "section_id": "over",
+      "parent_clause": "over.oper",
+      "n_chunks": 11
+    }
+  ],
+  "edges": [
+    {
+      "source": "basic.lval",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.prom",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.const.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.dynamic.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.mptr.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.post.incr",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.pre.incr",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.static.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.sub",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.type.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.bool",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.bool",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.lval",
+      "target": "basic.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.lval",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "conv.ptr",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.add",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.add",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.mul",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.const",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.arith.conv",
+      "target": "conv.prom",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ass",
+      "target": "basic.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.cond",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.log.or",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.throw",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.yield",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.await",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.yield",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.await",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.await",
+      "target": "over.match.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.fctptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.fpprom",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.prom",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.prim.id.dtor",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.prim.id.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.prim.this",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.shift",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.call",
+      "target": "over.match.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.static.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.type.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.unary.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.sub",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.comma",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.fctptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.throw",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "over.built",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.cond",
+      "target": "over.match.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.fctptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.integral",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.prom",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.add",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.await",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.cond",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.delete",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.dynamic.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.eq",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.mul",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.new",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.post.incr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.pre",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.pre.incr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.this",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.rel",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.shift",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.spaceship",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.throw",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.typeid",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.yield",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.cond",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.mptr.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.sizeof",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.sub",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.typeid",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.unary.noexcept",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.unary.op",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.context",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.delete",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.const.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.new",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.fctptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "intro.execution",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.mptr.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.const",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.delete",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.add",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.pre.incr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.static.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.type.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre",
+      "target": "over.built",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre",
+      "target": "over.match.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.add",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.post.incr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.fold",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.unary.op",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.qual",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.qual",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "basic.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.id.dtor",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.id.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.throw",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "over.oper.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.typeid",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.unary.op",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.closure",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.closure",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.lambda.general",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.compound",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.compound",
+      "target": "expr.prim.req.simple",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.compound",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.nested",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.simple",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.simple",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.simple",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.simple",
+      "target": "expr.prim.req.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.simple",
+      "target": "expr.prim.req.nested",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.req.type",
+      "target": "expr.prim.req.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.this",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.prim.this",
+      "target": "expr.ref",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.mptr.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.prim.id.dtor",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.prim.id.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.prim.id.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.prim.paren",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.eq",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.spaceship",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.shift",
+      "target": "expr.add",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "expr.const",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "intro.memory",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.eq",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.rel",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.shift",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.type",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "basic.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.bool",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.fctptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.fpint",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.integral",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.mem",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.prom",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.ptr",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.mptr.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.add",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.ass",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.type",
+      "target": "conv.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.type.conv",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.type.conv",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.array",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.rval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.await",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.cast",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.delete",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.new",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.unary.noexcept",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.noexcept",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.noexcept",
+      "target": "expr.const",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.noexcept",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "conv.func",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "conv.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "expr.prim.id.qual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "intro.memory",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.xor",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "expr.yield",
+      "target": "expr.await",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "basic.lval",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.await",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.const",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.context",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.new",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.post.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.execution",
+      "target": "intro.memory",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.comma",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.cond",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.log.and",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.log.or",
+      "edge_type": "references"
+    },
+    {
+      "source": "intro.races",
+      "target": "intro.memory",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.built",
+      "target": "conv.prom",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.built",
+      "target": "expr.arith.conv",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.built",
+      "target": "expr.mptr.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.built",
+      "target": "expr.spaceship",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.built",
+      "target": "over.match.oper",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.cond",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.eq",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.rel",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.spaceship",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "over.built",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.oper.general",
+      "target": "expr.await",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.oper.general",
+      "target": "expr.call",
+      "edge_type": "references"
+    },
+    {
+      "source": "over.oper.general",
+      "target": "expr.sub",
+      "edge_type": "references"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.context",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.type",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.bool",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.double",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.fctptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.fpint",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.fpprom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.func",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.double",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.fctptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.fpint",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.fpprom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.func",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.bool",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.fctptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.fpint",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.fpprom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.func",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.double",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.fpint",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.fpprom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.func",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fctptr",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.fpprom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.func",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.func",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.fpprom",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.func",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.integral",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.general",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.lval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.mem",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.prom",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.prom",
+      "target": "conv.ptr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.prom",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.prom",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.ptr",
+      "target": "conv.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.ptr",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "conv.qual",
+      "target": "conv.rval",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.ass",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.bit.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.comma",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.cond",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.eq",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.await",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.delete",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.new",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.pre.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.sizeof",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.unary.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.arith.conv",
+      "target": "expr.const",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.arith.conv",
+      "target": "expr.pre",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.bit.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.comma",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.cond",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.eq",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ass",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.delete",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.new",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.pre.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.sizeof",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.unary.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.comma",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.cond",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.eq",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.const.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.dynamic.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.post.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.post.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.ref",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.comma",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.cond",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.eq",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.cond",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.eq",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.eq",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.pre",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.dynamic.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.post.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.post.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.ref",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.type",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.new",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.pre.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.sizeof",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.unary.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.post.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.post.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.ref",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.log.and",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.log.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.mptr.oper",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.mul",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.or",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.pre.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.sizeof",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.unary.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.rel",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.post.incr",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.ref",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.general",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.ref",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.sizeof",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.unary.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.fold",
+      "target": "expr.prim.literal",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.fold",
+      "target": "expr.prim.paren",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.fold",
+      "target": "expr.prim.this",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.prim.id.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.prim.id.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.prim.id.qual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.id.qual",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.prim.lambda.closure",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.lambda.closure",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.literal",
+      "target": "expr.prim.paren",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.literal",
+      "target": "expr.prim.this",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.paren",
+      "target": "expr.prim.this",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.compound",
+      "target": "expr.prim.req.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.compound",
+      "target": "expr.prim.req.nested",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.compound",
+      "target": "expr.prim.req.simple",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.compound",
+      "target": "expr.prim.req.type",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.nested",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.simple",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.general",
+      "target": "expr.prim.req.type",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.nested",
+      "target": "expr.prim.req.simple",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.nested",
+      "target": "expr.prim.req.type",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.prim.req.simple",
+      "target": "expr.prim.req.type",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.static.cast",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.shift",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.shift",
+      "target": "expr.spaceship",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.shift",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.shift",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.shift",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "expr.unary.general",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.throw",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.sub",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.type.conv",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.throw",
+      "target": "expr.xor",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.throw",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.type.conv",
+      "target": "expr.typeid",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.unary.noexcept",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.unary.general",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.unary.noexcept",
+      "target": "expr.unary.op",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "expr.xor",
+      "target": "expr.yield",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "intro.multithread.general",
+      "target": "intro.races",
+      "edge_type": "sibling"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.prom",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.ass",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.const.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.context",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.dynamic.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.mptr.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.post.incr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.pre.incr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.prim.id.unqual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.static.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.sub",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.type",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "basic.lval",
+      "target": "expr.type.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.array",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.fpint",
+      "target": "conv.bool",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.integral",
+      "target": "conv.bool",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.lval",
+      "target": "basic.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.lval",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.lval",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.mem",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "conv.ptr",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.add",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.add",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.alignof",
+      "target": "expr.const",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.arith.conv",
+      "target": "conv.prom",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.ass",
+      "target": "basic.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.await",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.await",
+      "target": "expr.yield",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.await",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.await",
+      "target": "over.match.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.bit.and",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.fctptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.fpprom",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.prom",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.prim.id.dtor",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.prim.this",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "expr.shift",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.call",
+      "target": "over.match.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.static.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cast",
+      "target": "expr.type.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.comma",
+      "target": "expr.sub",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.comma",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.fctptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.mem",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.throw",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "expr.type",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "over.built",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.cond",
+      "target": "over.match.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.fctptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.integral",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.add",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.ass",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.await",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.delete",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.dynamic.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.eq",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.mul",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.new",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.post.incr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.pre",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.pre.incr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.this",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.reinterpret.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.rel",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.shift",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.spaceship",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.throw",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.typeid",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.yield",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.mem",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.const.cast",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.comma",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.cond",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.mptr.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.sizeof",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.sub",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.typeid",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.unary.noexcept",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.delete",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.const.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.delete",
+      "target": "expr.new",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.dynamic.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.fctptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.mem",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.eq",
+      "target": "expr.type",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "intro.execution",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.mptr.oper",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.mul",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.const",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.new",
+      "target": "expr.delete",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.or",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.add",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.ass",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.post.incr",
+      "target": "expr.pre.incr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.ass",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.static.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre",
+      "target": "expr.type.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre",
+      "target": "over.built",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre",
+      "target": "over.match.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.add",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.ass",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.pre.incr",
+      "target": "expr.post.incr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.dtor",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.general",
+      "target": "expr.unary.op",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "basic.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.id.dtor",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.id.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.prim.lambda.capture",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.throw",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "expr.type",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.typeid",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.lambda.capture",
+      "target": "expr.unary.op",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.prim.this",
+      "target": "expr.ref",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.ref",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.prim.id.dtor",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.ref",
+      "target": "expr.prim.paren",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.mem",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.reinterpret.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.rel",
+      "target": "expr.eq",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "expr.const",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sizeof",
+      "target": "intro.memory",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.eq",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.rel",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.spaceship",
+      "target": "expr.type",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "basic.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.bool",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.fctptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.fpint",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.integral",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.mem",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.prom",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.ptr",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.const.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "expr.mptr.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.add",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.type",
+      "target": "conv.qual",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.type.conv",
+      "target": "expr.cast",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.array",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.typeid",
+      "target": "conv.rval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.unary.noexcept",
+      "target": "expr.const",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "conv.func",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "conv.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "intro.memory",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.xor",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.yield",
+      "target": "expr.await",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.execution",
+      "target": "basic.lval",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.await",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.const",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.new",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.execution",
+      "target": "intro.memory",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.comma",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.cond",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.log.and",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.races",
+      "target": "expr.log.or",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "intro.races",
+      "target": "intro.memory",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.built",
+      "target": "conv.prom",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.built",
+      "target": "expr.arith.conv",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.built",
+      "target": "expr.mptr.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.built",
+      "target": "expr.spaceship",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.built",
+      "target": "over.match.oper",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.cond",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.eq",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.rel",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "expr.spaceship",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.match.oper",
+      "target": "over.built",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.oper.general",
+      "target": "expr.await",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.oper.general",
+      "target": "expr.call",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "over.oper.general",
+      "target": "expr.sub",
+      "edge_type": "references_plain"
+    },
+    {
+      "source": "expr.ass",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.cond",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.const",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.const",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.prim.id.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.context",
+      "target": "expr.prim.req.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.delete",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.log.and",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.log.or",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.pre",
+      "target": "over.oper.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.prim.id.unqual",
+      "target": "over.oper.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.static.cast",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.sub",
+      "target": "expr.unary.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "expr.unary.op",
+      "target": "conv.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "intro.execution",
+      "target": "expr.prim.lambda.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "intro.execution",
+      "target": "intro.multithread.general",
+      "edge_type": "references_general"
+    },
+    {
+      "source": "intro.memory",
+      "target": "intro.multithread.general",
+      "edge_type": "references_general"
+    }
+  ],
+  "dropped": {
+    "mentions": {
+      "out_of_corpus": 626
+    },
+    "top_out_of_corpus_targets": [
+      [
+        "dcl.init.general",
+        23
+      ],
+      [
+        "dcl.decl.general",
+        20
+      ],
+      [
+        "dcl.fct",
+        20
+      ],
+      [
+        "dcl.name",
+        14
+      ],
+      [
+        "temp.names",
+        13
+      ],
+      [
+        "basic.compound",
+        13
+      ],
+      [
+        "temp.pre",
+        13
+      ],
+      [
+        "dcl.type.simple",
+        10
+      ],
+      [
+        "basic.def.odr",
+        10
+      ],
+      [
+        "dcl.enum",
+        9
+      ],
+      [
+        "expr.compound",
+        9
+      ],
+      [
+        "conv",
+        9
+      ],
+      [
+        "dcl.type.decltype",
+        9
+      ],
+      [
+        "stmt.block",
+        8
+      ],
+      [
+        "dcl.init",
+        8
+      ],
+      [
+        "class.member.lookup",
+        8
+      ],
+      [
+        "lex.name",
+        8
+      ],
+      [
+        "dcl.fct.default",
+        7
+      ],
+      [
+        "class.temporary",
+        7
+      ],
+      [
+        "class.dtor",
+        7
+      ]
+    ],
+    "distinct_out_of_corpus_targets": 205
+  },
+  "stats": {
+    "nodes": 82,
+    "edges_stored": {
+      "references": 339,
+      "sibling": 381,
+      "references_plain": 247,
+      "references_general": 17
+    },
+    "undirected_edges": {
+      "references": 309,
+      "parent": 0,
+      "sibling": 381,
+      "references_plain": 231,
+      "references_general": 17
+    },
+    "configs": {
+      "default (references+parent+sibling)": {
+        "undirected_edges": 638,
+        "degree": {
+          "min": 1,
+          "median": 15.0,
+          "mean": 15.56,
+          "max": 42,
+          "max_node": "expr.const"
+        },
+        "degree_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 6,
+          "5": 2,
+          "6": 4,
+          "7": 3,
+          "8": 4,
+          "9": 1,
+          "10": 1,
+          "11": 3,
+          "12": 2,
+          "13": 4,
+          "14": 2,
+          "15": 7,
+          "16": 3,
+          "17": 1,
+          "18": 5,
+          "19": 8,
+          "20": 2,
+          "21": 3,
+          "22": 1,
+          "23": 1,
+          "24": 4,
+          "25": 2,
+          "26": 1,
+          "27": 2,
+          "28": 2,
+          "29": 3,
+          "32": 1,
+          "42": 1
+        },
+        "isolated": [],
+        "components": 1,
+        "largest_component": 82,
+        "component_sizes": [
+          82
+        ],
+        "mean_share_within_1_hop": 0.202,
+        "mean_share_within_2_hops": 0.7112
+      },
+      "references": {
+        "undirected_edges": 309,
+        "degree": {
+          "min": 0,
+          "median": 6.5,
+          "mean": 7.54,
+          "max": 41,
+          "max_node": "expr.const"
+        },
+        "degree_histogram": {
+          "0": 4,
+          "1": 8,
+          "2": 4,
+          "3": 6,
+          "4": 8,
+          "5": 8,
+          "6": 3,
+          "7": 8,
+          "8": 6,
+          "9": 2,
+          "10": 1,
+          "11": 7,
+          "12": 3,
+          "13": 5,
+          "14": 1,
+          "15": 2,
+          "16": 1,
+          "17": 1,
+          "20": 1,
+          "22": 1,
+          "24": 1,
+          "41": 1
+        },
+        "isolated": [
+          "conv.double",
+          "conv.general",
+          "expr.prim.literal",
+          "intro.multithread.general"
+        ],
+        "components": 5,
+        "largest_component": 78,
+        "component_sizes": [
+          78,
+          1,
+          1,
+          1,
+          1
+        ],
+        "mean_share_within_1_hop": 0.1041,
+        "mean_share_within_2_hops": 0.5286
+      },
+      "sibling": {
+        "undirected_edges": 381,
+        "degree": {
+          "min": 0,
+          "median": 10.0,
+          "mean": 9.29,
+          "max": 17,
+          "max_node": "expr.add"
+        },
+        "degree_histogram": {
+          "0": 5,
+          "1": 2,
+          "2": 9,
+          "3": 8,
+          "4": 5,
+          "8": 9,
+          "10": 11,
+          "14": 15,
+          "17": 18
+        },
+        "isolated": [
+          "intro.execution",
+          "intro.memory",
+          "over.built",
+          "over.match.oper",
+          "over.oper.general"
+        ],
+        "components": 16,
+        "largest_component": 18,
+        "component_sizes": [
+          18,
+          15,
+          11,
+          9,
+          5,
+          4,
+          4,
+          3,
+          3,
+          3
+        ],
+        "mean_share_within_1_hop": 0.1255,
+        "mean_share_within_2_hops": 0.1255
+      },
+      "parent": {
+        "undirected_edges": 0,
+        "degree": {
+          "min": 0,
+          "median": 0.0,
+          "mean": 0.0,
+          "max": 0,
+          "max_node": "basic.lval"
+        },
+        "degree_histogram": {
+          "0": 82
+        },
+        "isolated": [
+          "basic.lval",
+          "conv.array",
+          "conv.bool",
+          "conv.double",
+          "conv.fctptr",
+          "conv.fpint",
+          "conv.fpprom",
+          "conv.func",
+          "conv.general",
+          "conv.integral",
+          "conv.lval",
+          "conv.mem",
+          "conv.prom",
+          "conv.ptr",
+          "conv.qual",
+          "conv.rval",
+          "expr.add",
+          "expr.alignof",
+          "expr.arith.conv",
+          "expr.ass",
+          "expr.await",
+          "expr.bit.and",
+          "expr.call",
+          "expr.cast",
+          "expr.comma",
+          "expr.cond",
+          "expr.const",
+          "expr.const.cast",
+          "expr.context",
+          "expr.delete",
+          "expr.dynamic.cast",
+          "expr.eq",
+          "expr.log.and",
+          "expr.log.or",
+          "expr.mptr.oper",
+          "expr.mul",
+          "expr.new",
+          "expr.or",
+          "expr.post.general",
+          "expr.post.incr",
+          "expr.pre",
+          "expr.pre.incr",
+          "expr.prim.fold",
+          "expr.prim.id.dtor",
+          "expr.prim.id.general",
+          "expr.prim.id.qual",
+          "expr.prim.id.unqual",
+          "expr.prim.lambda.capture",
+          "expr.prim.lambda.closure",
+          "expr.prim.lambda.general",
+          "expr.prim.literal",
+          "expr.prim.paren",
+          "expr.prim.req.compound",
+          "expr.prim.req.general",
+          "expr.prim.req.nested",
+          "expr.prim.req.simple",
+          "expr.prim.req.type",
+          "expr.prim.this",
+          "expr.ref",
+          "expr.reinterpret.cast",
+          "expr.rel",
+          "expr.shift",
+          "expr.sizeof",
+          "expr.spaceship",
+          "expr.static.cast",
+          "expr.sub",
+          "expr.throw",
+          "expr.type",
+          "expr.type.conv",
+          "expr.typeid",
+          "expr.unary.general",
+          "expr.unary.noexcept",
+          "expr.unary.op",
+          "expr.xor",
+          "expr.yield",
+          "intro.execution",
+          "intro.memory",
+          "intro.multithread.general",
+          "intro.races",
+          "over.built",
+          "over.match.oper",
+          "over.oper.general"
+        ],
+        "components": 82,
+        "largest_component": 1,
+        "component_sizes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "mean_share_within_1_hop": 0.0122,
+        "mean_share_within_2_hops": 0.0122
+      },
+      "references_plain": {
+        "undirected_edges": 231,
+        "degree": {
+          "min": 0,
+          "median": 4.5,
+          "mean": 5.63,
+          "max": 32,
+          "max_node": "expr.const"
+        },
+        "degree_histogram": {
+          "0": 14,
+          "1": 7,
+          "2": 8,
+          "3": 9,
+          "4": 3,
+          "5": 10,
+          "6": 3,
+          "7": 8,
+          "8": 1,
+          "10": 4,
+          "11": 4,
+          "12": 1,
+          "13": 3,
+          "14": 1,
+          "15": 2,
+          "16": 1,
+          "19": 1,
+          "22": 1,
+          "32": 1
+        },
+        "isolated": [
+          "conv.double",
+          "conv.general",
+          "expr.post.general",
+          "expr.prim.fold",
+          "expr.prim.lambda.closure",
+          "expr.prim.lambda.general",
+          "expr.prim.literal",
+          "expr.prim.req.compound",
+          "expr.prim.req.general",
+          "expr.prim.req.nested",
+          "expr.prim.req.simple",
+          "expr.prim.req.type",
+          "expr.unary.general",
+          "intro.multithread.general"
+        ],
+        "components": 15,
+        "largest_component": 68,
+        "component_sizes": [
+          68,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "mean_share_within_1_hop": 0.0809,
+        "mean_share_within_2_hops": 0.3995
+      },
+      "references+references_general+sibling": {
+        "undirected_edges": 650,
+        "degree": {
+          "min": 2,
+          "median": 16.0,
+          "mean": 15.85,
+          "max": 43,
+          "max_node": "expr.const"
+        },
+        "degree_histogram": {
+          "2": 1,
+          "3": 2,
+          "4": 4,
+          "5": 4,
+          "6": 4,
+          "7": 3,
+          "8": 3,
+          "9": 2,
+          "11": 4,
+          "12": 2,
+          "13": 3,
+          "14": 2,
+          "15": 6,
+          "16": 2,
+          "17": 3,
+          "18": 5,
+          "19": 6,
+          "20": 4,
+          "21": 3,
+          "22": 2,
+          "23": 1,
+          "24": 2,
+          "25": 4,
+          "26": 1,
+          "27": 2,
+          "28": 2,
+          "29": 3,
+          "33": 1,
+          "43": 1
+        },
+        "isolated": [],
+        "components": 1,
+        "largest_component": 82,
+        "component_sizes": [
+          82
+        ],
+        "mean_share_within_1_hop": 0.2055,
+        "mean_share_within_2_hops": 0.732
+      }
+    },
+    "dropped": {
+      "mentions": {
+        "out_of_corpus": 626
+      },
+      "top_out_of_corpus_targets": [
+        [
+          "dcl.init.general",
+          23
+        ],
+        [
+          "dcl.decl.general",
+          20
+        ],
+        [
+          "dcl.fct",
+          20
+        ],
+        [
+          "dcl.name",
+          14
+        ],
+        [
+          "temp.names",
+          13
+        ],
+        [
+          "basic.compound",
+          13
+        ],
+        [
+          "temp.pre",
+          13
+        ],
+        [
+          "dcl.type.simple",
+          10
+        ],
+        [
+          "basic.def.odr",
+          10
+        ],
+        [
+          "dcl.enum",
+          9
+        ],
+        [
+          "expr.compound",
+          9
+        ],
+        [
+          "conv",
+          9
+        ],
+        [
+          "dcl.type.decltype",
+          9
+        ],
+        [
+          "stmt.block",
+          8
+        ],
+        [
+          "dcl.init",
+          8
+        ],
+        [
+          "class.member.lookup",
+          8
+        ],
+        [
+          "lex.name",
+          8
+        ],
+        [
+          "dcl.fct.default",
+          7
+        ],
+        [
+          "class.temporary",
+          7
+        ],
+        [
+          "class.dtor",
+          7
+        ]
+      ],
+      "distinct_out_of_corpus_targets": 205
+    }
+  }
+}

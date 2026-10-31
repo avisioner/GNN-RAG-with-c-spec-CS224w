@@ -1,0 +1,262 @@
+{
+  "created_at_utc": "2026-10-31T00:05:42.013396+00:00",
+  "command": "python graph/specgraph_graph/run_milestone.py",
+  "graph_expand_defaults": {
+    "seed_k": 5,
+    "hops": 1,
+    "lam": 0.5,
+    "edge_types": [
+      "references",
+      "parent",
+      "sibling"
+    ]
+  },
+  "grid": {
+    "lambda": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "hops": [
+      1,
+      2
+    ]
+  },
+  "variants": {
+    "hops = 2": {
+      "hops": 2
+    },
+    "references only": {
+      "edge_types": [
+        "references"
+      ]
+    },
+    "sibling only": {
+      "edge_types": [
+        "sibling"
+      ]
+    },
+    "parent only (no edges on this data = Dense)": {
+      "edge_types": [
+        "parent"
+      ]
+    },
+    "references_plain only (= spec_graph.json refs)": {
+      "edge_types": [
+        "references_plain"
+      ]
+    },
+    "refs + references_general + sibling": {
+      "edge_types": [
+        "references",
+        "references_general",
+        "sibling"
+      ]
+    }
+  },
+  "ks": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "bootstrap": {
+    "samples": 2000,
+    "seed": 0
+  },
+  "query_mode": "question",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "clause_score": "max over chunks",
+  "erica_runs": {
+    "BM25": [
+      "results_question_only",
+      "bm25"
+    ],
+    "Dense": [
+      "results_question_only",
+      "dense"
+    ],
+    "Hybrid RRF 1:1": [
+      "results_question_only",
+      "hybrid_rrf"
+    ],
+    "Hybrid RRF 2:1": [
+      "results_ablation_question",
+      "hybrid_rrf_d2"
+    ]
+  },
+  "rrf": {
+    "k": 60,
+    "candidate_k": 50,
+    "hybrid_seed_dense_weight": 2.0
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "scores:numpy": "2.5.4",
+    "scores:torch": "2.15.0",
+    "scores:sentence-transformers": "5.7.0",
+    "scores:transformers": "5.21.0"
+  },
+  "input_sha256": {
+    "data/processed/chunks.jsonl": "8dde85cbed9ab15256a8bf10b9bd38946dfbf5f7ed0e46a56ef0de44c7ca5c35",
+    "data/benchmark/spec_benchmark_v1.jsonl": "a279fbc70a3a4b293735b4b8d22a8f744fb147931b91807f95593aca5add7945",
+    "artifacts/graph/clause_graph.json": "62d9da42916e651b961c8bb5fffd155f10e709cf1b7f6f46eb4af9acf8d8c73f",
+    "artifacts/scores/question_scores.json": "04980aaa66ed64c061d415e352b4115a1231656965a5ce3eeabdccf37e567bdb"
+  },
+  "paired_graphexp_vs_dense": {
+    "all/complete_coverage@10": {
+      "wins": 0,
+      "losses": 3,
+      "ties": 46,
+      "mean_diff": -0.061224489795918366,
+      "ci95": [
+        -0.14285714285714285,
+        0.0
+      ]
+    },
+    "all/complete_coverage@5": {
+      "wins": 2,
+      "losses": 0,
+      "ties": 47,
+      "mean_diff": 0.04081632653061224,
+      "ci95": [
+        0.0,
+        0.10204081632653061
+      ]
+    },
+    "all/recall@5": {
+      "wins": 2,
+      "losses": 2,
+      "ties": 45,
+      "mean_diff": 0.008503401360544218,
+      "ci95": [
+        -0.02040816326530612,
+        0.04421768707482994
+      ]
+    },
+    "all/recall@10": {
+      "wins": 1,
+      "losses": 6,
+      "ties": 42,
+      "mean_diff": -0.047619047619047616,
+      "ci95": [
+        -0.09523809523809523,
+        -0.006802721088435375
+      ]
+    },
+    "multi_hop/complete_coverage@10": {
+      "wins": 0,
+      "losses": 1,
+      "ties": 16,
+      "mean_diff": -0.058823529411764705,
+      "ci95": [
+        -0.17647058823529413,
+        0.0
+      ]
+    },
+    "multi_hop/complete_coverage@5": {
+      "wins": 0,
+      "losses": 0,
+      "ties": 17,
+      "mean_diff": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "multi_hop/recall@5": {
+      "wins": 0,
+      "losses": 2,
+      "ties": 15,
+      "mean_diff": -0.034313725490196074,
+      "ci95": [
+        -0.08823529411764705,
+        0.0
+      ]
+    },
+    "multi_hop/recall@10": {
+      "wins": 1,
+      "losses": 3,
+      "ties": 13,
+      "mean_diff": -0.04901960784313725,
+      "ci95": [
+        -0.1372549019607843,
+        0.0392156862745098
+      ]
+    }
+  },
+  "reachability": {
+    "refs+parent+sibling/all": [
+      0.9489795918367347,
+      0.5898456943753111,
+      0.9107142857142857,
+      0.5584415584415584
+    ],
+    "refs+parent+sibling/single_clause": [
+      1.0,
+      0.586991869918699,
+      NaN,
+      NaN
+    ],
+    "refs+parent+sibling/two_clause": [
+      0.9117647058823529,
+      0.6104734576757532,
+      0.875,
+      0.5768398268398268
+    ],
+    "refs+parent+sibling/multi_hop": [
+      0.9411764705882353,
+      0.5717360114777618,
+      0.9375,
+      0.5446428571428571
+    ],
+    "references/all": [
+      0.9183673469387755,
+      0.44201095072175217,
+      0.8571428571428571,
+      0.4049165120593692
+    ],
+    "references/single_clause": [
+      1.0,
+      0.43170731707317067,
+      NaN,
+      NaN
+    ],
+    "references/two_clause": [
+      0.8529411764705882,
+      0.45767575322812054,
+      0.7916666666666666,
+      0.40800865800865793
+    ],
+    "references/multi_hop": [
+      0.9117647058823529,
+      0.43543758967001434,
+      0.90625,
+      0.4025974025974026
+    ],
+    "sibling/all": [
+      0.7482993197278911,
+      0.336734693877551,
+      0.35714285714285715,
+      0.3051948051948052
+    ],
+    "sibling/single_clause": [
+      1.0,
+      0.32764227642276417,
+      NaN,
+      NaN
+    ],
+    "sibling/two_clause": [
+      0.7058823529411765,
+      0.33500717360114773,
+      0.375,
+      0.3095238095238095
+    ],
+    "sibling/multi_hop": [
+      0.5686274509803921,
+      0.3464849354375896,
+      0.34375,
+      0.30194805194805197
+    ]
+  }
+}
