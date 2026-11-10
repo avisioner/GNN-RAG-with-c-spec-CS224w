@@ -1,0 +1,55 @@
+{
+  "chunks": "D:\\Stanford\\2026 fall\\cs224w\\project\\data\\processed\\chunks.jsonl",
+  "queries": "D:\\Stanford\\2026 fall\\cs224w\\project\\data\\benchmark\\spec_benchmark_v1.jsonl",
+  "graph": null,
+  "output_dir": "D:\\Stanford\\2026 fall\\cs224w\\project\\baseline\\specgraph_baselines\\results_operator_gloss",
+  "methods": [
+    "bm25",
+    "dense",
+    "hybrid_rrf"
+  ],
+  "dense_backend": "exact",
+  "chroma_dir": ".chroma_specgraph",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "rerank": false,
+  "lexical_mode": "content",
+  "threads": 4,
+  "query_mode": "query_code",
+  "query_transform": "operator_gloss",
+  "dense_weight": 2.0,
+  "rrf_k": 60,
+  "dry_run": false,
+  "self_test": false,
+  "top_k": [
+    5,
+    10,
+    50
+  ],
+  "candidate_k": 50,
+  "effective_candidate_k": 50,
+  "query_transform_version": "operator_gloss_v1",
+  "evaluation_unit": "distinct_clause",
+  "evidence_unit": "best_chunk",
+  "bm25": {
+    "idf": "log1p((N-df+0.5)/(df+0.5))",
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "created_at_utc": "2026-11-04T19:06:57.997292+00:00",
+  "packages": {
+    "numpy": "2.5.4",
+    "sentence-transformers": "5.7.0",
+    "chromadb": null,
+    "torch": "2.15.0+cpu"
+  },
+  "input_sha256": {
+    "chunks": "8dde85cbed9ab15256a8bf10b9bd38946dfbf5f7ed0e46a56ef0de44c7ca5c35",
+    "queries": "a279fbc70a3a4b293735b4b8d22a8f744fb147931b91807f95593aca5add7945",
+    "script": "8afcc10873723617bcf78715217f2bc02d8778cdf94d64ea044a80ba73d6b77a",
+    "query_transforms": "da4d35f2516d2f84fd8051ddd88fb0958e7a8a4601ac97020523708e236ac49a"
+  },
+  "query_inputs_sha256": "7ef9b1b5fa08b121929b2fb248d31da341043fa8e77b1e51ea5d332fcf4f7ab3"
+}

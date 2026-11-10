@@ -1,14 +1,19 @@
 param(
     [string]$EmbeddingModel = 'BAAI/bge-small-en-v1.5',
-    [string]$OutputName = 'results_preliminary_bge_small',
+    [string]$OutputName = 'reproduction',
     [ValidateSet('query_code', 'question')]
     [string]$QueryMode = 'query_code',
+    [ValidateSet('none', 'operator_gloss')]
+    [string]$QueryTransform = 'none',
+    [string]$EmbeddingRevision = '',
     [double]$DenseWeight = 1.0,
     [switch]$SkipRerank,
     [switch]$Offline
 )
 $ErrorActionPreference = 'Stop'
 $baselineDir = Split-Path -Parent $PSScriptRoot
+$projectDir = Split-Path -Parent $baselineDir
+$resultsDir = Join-Path $projectDir 'results/baseline'
 $pythonPath = Join-Path $baselineDir '.venv/Scripts/python.exe'
 if (-not (Test-Path -LiteralPath $pythonPath)) {
     throw 'Create baseline/.venv and install requirements-preliminary-lock.txt first (CPU PyTorch index required).'
@@ -20,11 +25,13 @@ if ($Offline) { $env:HF_HUB_OFFLINE = '1' }
 try {
     $rerankArgs = @()
     if (-not $SkipRerank) { $rerankArgs = @('--rerank') }
+    $revisionArgs = @()
+    if ($EmbeddingRevision) { $revisionArgs = @('--embedding-revision', $EmbeddingRevision) }
     & $pythonPath -u (Join-Path $PSScriptRoot 'retrieval_baselines.py') `
-        --embedding-model $EmbeddingModel --lexical-mode content @rerankArgs `
-        --query-mode $QueryMode --dense-weight $DenseWeight `
+        --embedding-model $EmbeddingModel --lexical-mode content @rerankArgs @revisionArgs `
+        --query-mode $QueryMode --query-transform $QueryTransform --dense-weight $DenseWeight `
         --top-k 5 10 50 --candidate-k 50 --threads 4 `
-        --output-dir (Join-Path $PSScriptRoot $OutputName)
+        --output-dir (Join-Path $resultsDir $OutputName)
     if ($LASTEXITCODE -ne 0) { throw "Baseline exited with code $LASTEXITCODE" }
 } finally {
     if ($Offline) { Remove-Item Env:HF_HUB_OFFLINE -ErrorAction SilentlyContinue }

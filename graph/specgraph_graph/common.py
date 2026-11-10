@@ -12,6 +12,7 @@ from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 BASELINE_DIR = PROJECT_ROOT / "baseline" / "specgraph_baselines"
+BASELINE_RESULTS_DIR = PROJECT_ROOT / "results" / "baseline"
 CHUNKS_PATH = PROJECT_ROOT / "data" / "processed" / "chunks.jsonl"
 BENCHMARK_PATH = PROJECT_ROOT / "data" / "benchmark" / "spec_benchmark_v1.jsonl"
 SPEC_GRAPH_PATH = PROJECT_ROOT / "data" / "graph" / "spec_graph.json"

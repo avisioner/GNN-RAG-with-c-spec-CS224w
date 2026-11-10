@@ -18,6 +18,8 @@ import re
 from statistics import mean
 from typing import Any
 
+from query_transforms import TRANSFORM_VERSION, transform_query
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_EMBEDDING = "BAAI/bge-small-en-v1.5"
 DEFAULT_RERANKER = "cross-encoder/ms-marco-MiniLM-L6-v2"
@@ -76,6 +78,13 @@ def query_text(query: dict[str, Any], mode: str = "query_code") -> str:
         raise ValueError(f"Unknown query mode: {mode}")
     fields = ("query", "code") if mode == "query_code" else ("query",)
     return "\n".join(query[key] for key in fields if query.get(key)).strip()
+
+
+def retrieval_query_text(query: dict[str, Any], mode: str = "query_code",
+                         transform: str = "none") -> str:
+    if transform != "none" and mode != "query_code":
+        raise ValueError("Query transforms require --query-mode query_code")
+    return transform_query(query_text(query, mode), query.get("code", ""), transform)
 
 
 def tokenize(text: str) -> list[str]:
@@ -345,10 +354,12 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     chunks = [normalize_chunk(row) for row in read_records(args.chunks)]
     queries = read_records(args.queries)
     query_mode = getattr(args, "query_mode", "query_code")
+    query_transform = getattr(args, "query_transform", "none")
     dense_weight = getattr(args, "dense_weight", 1.0)
     graph = json.loads(Path(args.graph).read_text(encoding="utf-8-sig")) if args.graph else None
     audit = validate_data(chunks, queries, graph)
-    if any(not query_text(q, query_mode) for q in queries):
+    query_texts = [retrieval_query_text(q, query_mode, query_transform) for q in queries]
+    if any(not text for text in query_texts):
         raise ValueError(f"Empty retrieval input under query mode {query_mode}")
     print(f"Validated: {len(chunks)} chunks, {audit['clauses']} clauses, {len(queries)} queries")
     if args.dry_run:
@@ -374,20 +385,22 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         except ImportError:
             pass  # The regression fixture does not require PyTorch.
         from sentence_transformers import SentenceTransformer
-        embedding = SentenceTransformer(args.embedding_model)
+        revision = getattr(args, "embedding_revision", None)
+        embedding = SentenceTransformer(args.embedding_model, **({"revision": revision} if revision else {}))
         if query_prefix is None:
             query_prefix = ("Represent this sentence for searching relevant passages: "
                             if args.embedding_model.startswith("BAAI/bge-")
                             else getattr(embedding, "prompts", {}).get("query", ""))
         audit["embedding_documents"] = truncation_report(embedding, corpus_texts)
-        audit["embedding_queries"] = truncation_report(embedding, [query_prefix + query_text(q, query_mode) for q in queries])
+        audit["embedding_queries"] = truncation_report(embedding, [query_prefix + text for text in query_texts])
         if args.dense_backend == "exact":
             vectors = embedding.encode_document(corpus_texts, normalize_embeddings=True,
                                                  show_progress_bar=True)
         else:
-            coll = build_chroma_store(chunks, embedding, args.chroma_dir, args.embedding_model)
+            coll = build_chroma_store(chunks, embedding, args.chroma_dir,
+                                      args.embedding_model + ("@" + revision if revision else ""))
         print(f"Embedding truncation: {audit['embedding_documents']}")
-        query_vectors = embedding.encode_query([query_text(q, query_mode) for q in queries],
+        query_vectors = embedding.encode_query(query_texts,
                                                 prompt=query_prefix, normalize_embeddings=True,
                                                 show_progress_bar=False)
     if "hybrid_cross_encoder" in methods:
@@ -398,7 +411,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                       if n["node_type"] == "clause"} if graph else None
     rows = []
     for query_index, query in enumerate(queries):
-        text = query_text(query, query_mode)
+        text = query_texts[query_index]
         chunk_rankings, results, evidence = {}, {}, {}
         if bm25 is not None:
             chunk_rankings["bm25"] = rank_bm25(text, bm25, chunks, len(chunks), lexical_mode)
@@ -443,6 +456,9 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     metrics = aggregate(rows, methods, sorted(set(args.top_k)))
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
+    with (output / "query_inputs.jsonl").open("w", encoding="utf-8") as f:
+        for query, text in zip(queries, query_texts):
+            f.write(json.dumps({"query_id": query["query_id"], "text": text}, ensure_ascii=False) + "\n")
     with (output / "ranked_results.jsonl").open("w", encoding="utf-8") as f:
         for row in rows:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
@@ -459,16 +475,23 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         except PackageNotFoundError:
             packages[name] = None
     config = {**vars(args), "methods": methods, "effective_candidate_k": candidate_k,
+              "query_mode": query_mode, "query_transform": query_transform,
+              "query_transform_version": TRANSFORM_VERSION if query_transform != "none" else None,
               "query_prefix": query_prefix if need_dense else None,
               "evaluation_unit": "distinct_clause", "evidence_unit": "best_chunk",
               "bm25": {"idf": "log1p((N-df+0.5)/(df+0.5))", "k1": 1.5, "b": 0.75},
               "created_at_utc": datetime.now(timezone.utc).isoformat(), "packages": packages,
               "input_sha256": {"chunks": file_sha(args.chunks), "queries": file_sha(args.queries),
-                               "script": file_sha(__file__)}}
+                               "script": file_sha(__file__),
+                               "query_transforms": file_sha(Path(__file__).with_name("query_transforms.py"))},
+              "query_inputs_sha256": file_sha(output / "query_inputs.jsonl")}
     if args.graph:
         config["input_sha256"]["graph"] = file_sha(args.graph)
     for name, obj in (("metrics.json", metrics), ("data_audit.json", audit), ("run_config.json", config)):
         (output / name).write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    for filename in ("retrieval_baselines.py", "query_transforms.py"):
+        source = Path(__file__).with_name(filename)
+        (output / (source.stem + ".snapshot.py")).write_bytes(source.read_bytes())
     print(json.dumps(metrics["overall"], indent=2))
     print(f"Saved to: {output.resolve()}")
     return metrics
@@ -486,12 +509,13 @@ def main() -> None:
     parser.add_argument("--chunks", "--clauses", dest="chunks", default=str(PROJECT_ROOT / "data/processed/chunks.jsonl"))
     parser.add_argument("--queries", default=str(PROJECT_ROOT / "data/benchmark/spec_benchmark_v1.jsonl"))
     parser.add_argument("--graph", help="Validate graph mappings and export node IDs; never used for ranking")
-    parser.add_argument("--output-dir", default="results")
+    parser.add_argument("--output-dir", default=str(PROJECT_ROOT / "results/baseline/reproduction"))
     parser.add_argument("--methods", nargs="+", choices=["bm25", "dense", "hybrid_rrf", "hybrid_cross_encoder"],
                         default=["bm25", "dense", "hybrid_rrf"])
     parser.add_argument("--dense-backend", choices=["exact", "chroma"], default="exact")
     parser.add_argument("--chroma-dir", default=".chroma_specgraph")
     parser.add_argument("--embedding-model", default=DEFAULT_EMBEDDING)
+    parser.add_argument("--embedding-revision", help="Optional Hugging Face model commit for reproducible runs")
     parser.add_argument("--query-prefix", default=None, help="Override query instruction (empty string disables it)")
     parser.add_argument("--reranker-model", default=DEFAULT_RERANKER)
     parser.add_argument("--rerank", action="store_true", help="Also output hybrid_cross_encoder")
@@ -500,6 +524,8 @@ def main() -> None:
     parser.add_argument("--threads", type=int, default=4, help="PyTorch CPU threads")
     parser.add_argument("--query-mode", choices=["query_code", "question"], default="query_code",
                         help="Use question+code or question-only for every requested retriever")
+    parser.add_argument("--query-transform", choices=["none", "operator_gloss"], default="none",
+                        help="Append a fixed input-only operator glossary; requires query_code")
     parser.add_argument("--dense-weight", type=float, default=1.0,
                         help="Dense weight in RRF; BM25 weight stays 1 (default: equal weights)")
     parser.add_argument("--rrf-k", type=int, default=60)

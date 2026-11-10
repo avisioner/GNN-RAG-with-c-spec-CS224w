@@ -1,0 +1,235 @@
+{
+  "description": "Historical run artifacts relocated without changing their bytes. Metadata paths retain their original execution locations.",
+  "relocations": {
+    "baseline/specgraph_baselines/results_bm25": "results/baseline/bm25",
+    "baseline/specgraph_baselines/results_preliminary_bge_small": "results/baseline/query_code",
+    "baseline/specgraph_baselines/results_question_only": "results/baseline/question_only",
+    "baseline/specgraph_baselines/results_ablation_query_code": "results/baseline/fusion_query_code",
+    "baseline/specgraph_baselines/results_ablation_question": "results/baseline/fusion_question_only",
+    "baseline/specgraph_baselines/results_operator_gloss": "results/baseline/operator_gloss",
+    "baseline/specgraph_baselines/preliminary_summary": "results/baseline/summary",
+    "baseline/specgraph_baselines/PRELIMINARY_RESULTS.md": "results/baseline/RESULTS.md",
+    "baseline/specgraph_baselines/QUERY_PIPELINE_RESULTS.md": "results/baseline/operator_gloss/RESULTS.md",
+    "results/query_diagnostics/REPORT.md": "results/query_diagnostics/RESULTS.md",
+    "results/query_diagnostics/FINDINGS.md": "results/query_diagnostics/README.md",
+    "results/milestone/graph_expansion_results.md": "results/milestone/RESULTS.md",
+    "docs/claude/milestone_progress.md": "docs/milestone/PROGRESS.md"
+  },
+  "preserved_files": [
+    {
+      "old_path": "baseline/specgraph_baselines/results_bm25/corpus_manifest.jsonl",
+      "path": "results/baseline/bm25/corpus_manifest.jsonl",
+      "sha256": "91a3a46be85c0880c5c6108413151e47ae52533b95ecb872ce0cfad1770a3e4c"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_bm25/data_audit.json",
+      "path": "results/baseline/bm25/data_audit.json",
+      "sha256": "abbfd3b051eea0baff76b08287cb31b2b22c4b527c1c239b864ac8ae33a1e536"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_bm25/metrics.json",
+      "path": "results/baseline/bm25/metrics.json",
+      "sha256": "b30ca1cbc8c625a11281206007fdc06f4f3bb25824737ca07356920d5e018f69"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_bm25/ranked_results.jsonl",
+      "path": "results/baseline/bm25/ranked_results.jsonl",
+      "sha256": "c0c19c2b59a2674b969d02066ab65dcce142167404d74aa6e8524e90d531faa6"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_bm25/run_config.json",
+      "path": "results/baseline/bm25/run_config.json",
+      "sha256": "9a37221dea6b33dd70f3e9628476aaff3032c39a7ff87d3213c526650e0c58e3"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/corpus_manifest.jsonl",
+      "path": "results/baseline/query_code/corpus_manifest.jsonl",
+      "sha256": "31152a9df4989765772cc025a4eba3a472ae92eaee06e3de2aa637288e1cb87a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/data_audit.json",
+      "path": "results/baseline/query_code/data_audit.json",
+      "sha256": "adb626d9556705376dd929e2c5220510d33a566756f4ba38f294b27b7b3e0bc8"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/metrics.json",
+      "path": "results/baseline/query_code/metrics.json",
+      "sha256": "5b72eaaab88df8c39d6c6d9a33b2bcc9673c87f5b91571e699fddf18ad950b3b"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/model_revisions.json",
+      "path": "results/baseline/query_code/model_revisions.json",
+      "sha256": "bb0eee5c7680e1ec46d012aaab03162e4c887a0b04052887628dc523df5c357b"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/ranked_results.jsonl",
+      "path": "results/baseline/query_code/ranked_results.jsonl",
+      "sha256": "c5e741976b6b9e4fc6edde7a6f34e769602ff6c046a4f1c13e0e95b76ffaf9bf"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/retrieval_baselines.snapshot.py",
+      "path": "results/baseline/query_code/retrieval_baselines.snapshot.py",
+      "sha256": "5af22acad0e70a7097cea5373dea322d82236e2da9c2608d198ad46aae2b1c51"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_preliminary_bge_small/run_config.json",
+      "path": "results/baseline/query_code/run_config.json",
+      "sha256": "0224506a0eed007b4d617b90c72d0ac6c4a60a681909650accdccf4277cf72a9"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/corpus_manifest.jsonl",
+      "path": "results/baseline/question_only/corpus_manifest.jsonl",
+      "sha256": "31152a9df4989765772cc025a4eba3a472ae92eaee06e3de2aa637288e1cb87a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/data_audit.json",
+      "path": "results/baseline/question_only/data_audit.json",
+      "sha256": "108e3cf80ab9b3dee7de0e7e811eb05089b3b24b2f2d465cd985d8a89ebb6106"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/metrics.json",
+      "path": "results/baseline/question_only/metrics.json",
+      "sha256": "8de0d7889bbbdc4cfe2d113ab3d41af6e14170b5e84a5a40c4daa2cd49f097ff"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/model_revisions.json",
+      "path": "results/baseline/question_only/model_revisions.json",
+      "sha256": "bb0eee5c7680e1ec46d012aaab03162e4c887a0b04052887628dc523df5c357b"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/ranked_results.jsonl",
+      "path": "results/baseline/question_only/ranked_results.jsonl",
+      "sha256": "45b3cad892f57c2ed1688dc959b24c53c86ac572b0d306c56cc2e7562adb03f3"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/retrieval_baselines.snapshot.py",
+      "path": "results/baseline/question_only/retrieval_baselines.snapshot.py",
+      "sha256": "eced82e19c8f6ab17c88520463b1d6c7d507188f8645e3e9520c00cd4a35fadc"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_question_only/run_config.json",
+      "path": "results/baseline/question_only/run_config.json",
+      "sha256": "219084d06c487109b25d652cf3112f500af11b786bbeba78d33c4128e5c79436"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_query_code/corpus_manifest.jsonl",
+      "path": "results/baseline/fusion_query_code/corpus_manifest.jsonl",
+      "sha256": "31152a9df4989765772cc025a4eba3a472ae92eaee06e3de2aa637288e1cb87a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_query_code/data_audit.json",
+      "path": "results/baseline/fusion_query_code/data_audit.json",
+      "sha256": "adb626d9556705376dd929e2c5220510d33a566756f4ba38f294b27b7b3e0bc8"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_query_code/metrics.json",
+      "path": "results/baseline/fusion_query_code/metrics.json",
+      "sha256": "dd1baa404f503769eb4f999c6583c45e9760d82e5f2af95b1b5ea07f316f011c"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_query_code/model_revisions.json",
+      "path": "results/baseline/fusion_query_code/model_revisions.json",
+      "sha256": "bb0eee5c7680e1ec46d012aaab03162e4c887a0b04052887628dc523df5c357b"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_query_code/ranked_results.jsonl",
+      "path": "results/baseline/fusion_query_code/ranked_results.jsonl",
+      "sha256": "3a9f27f1ccb3b4d5e1008586ad0156462f2d740f0525bea15a7dcdf484ca7717"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_query_code/run_config.json",
+      "path": "results/baseline/fusion_query_code/run_config.json",
+      "sha256": "199025cdc7e166fe314e333da990a5db399aaa70248bb4ca2fe56c26ed5aef76"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_question/corpus_manifest.jsonl",
+      "path": "results/baseline/fusion_question_only/corpus_manifest.jsonl",
+      "sha256": "31152a9df4989765772cc025a4eba3a472ae92eaee06e3de2aa637288e1cb87a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_question/data_audit.json",
+      "path": "results/baseline/fusion_question_only/data_audit.json",
+      "sha256": "108e3cf80ab9b3dee7de0e7e811eb05089b3b24b2f2d465cd985d8a89ebb6106"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_question/metrics.json",
+      "path": "results/baseline/fusion_question_only/metrics.json",
+      "sha256": "d452d544a916cb8c8e3fa60da889b270ef09b7589919776ac9fc7e8c2ce7155e"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_question/model_revisions.json",
+      "path": "results/baseline/fusion_question_only/model_revisions.json",
+      "sha256": "bb0eee5c7680e1ec46d012aaab03162e4c887a0b04052887628dc523df5c357b"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_question/ranked_results.jsonl",
+      "path": "results/baseline/fusion_question_only/ranked_results.jsonl",
+      "sha256": "1b08b154f21d2ecc91e9bd5f14b93f9cab5509edfc09f47a8e90244aeaa29e80"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_ablation_question/run_config.json",
+      "path": "results/baseline/fusion_question_only/run_config.json",
+      "sha256": "c79e1ce4a9d4c9b915fbb8b40ce104efa13ea7813bb3a50648f1d730c253e668"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/corpus_manifest.jsonl",
+      "path": "results/baseline/operator_gloss/corpus_manifest.jsonl",
+      "sha256": "31152a9df4989765772cc025a4eba3a472ae92eaee06e3de2aa637288e1cb87a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/data_audit.json",
+      "path": "results/baseline/operator_gloss/data_audit.json",
+      "sha256": "ca07f0feeb1308d916fcfba98848e39100a1802dd8df9120fe377328ad024e0c"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/metrics.json",
+      "path": "results/baseline/operator_gloss/metrics.json",
+      "sha256": "dbb9259424adb38b594679ba5534bf1d4a39359ce51b125bdc2fa6986a519ecf"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/query_inputs.jsonl",
+      "path": "results/baseline/operator_gloss/query_inputs.jsonl",
+      "sha256": "7ef9b1b5fa08b121929b2fb248d31da341043fa8e77b1e51ea5d332fcf4f7ab3"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/query_transforms.snapshot.py",
+      "path": "results/baseline/operator_gloss/query_transforms.snapshot.py",
+      "sha256": "da4d35f2516d2f84fd8051ddd88fb0958e7a8a4601ac97020523708e236ac49a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/ranked_results.jsonl",
+      "path": "results/baseline/operator_gloss/ranked_results.jsonl",
+      "sha256": "4939e2a65662fe6555f3fa5c7e5b27b121d188d68e79e4af3196093806d8e5fe"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/reproduction_verification.json",
+      "path": "results/baseline/operator_gloss/reproduction_verification.json",
+      "sha256": "2e50074c8496ec02e17ec3a4045dbf0337c586787ee1bde5c1b97c2877c23f27"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/retrieval_baselines.snapshot.py",
+      "path": "results/baseline/operator_gloss/retrieval_baselines.snapshot.py",
+      "sha256": "8afcc10873723617bcf78715217f2bc02d8778cdf94d64ea044a80ba73d6b77a"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/results_operator_gloss/run_config.json",
+      "path": "results/baseline/operator_gloss/run_config.json",
+      "sha256": "72aaba82dbe2bb3b15be1373c0c6c25e9d4997979238ff3b09e0aabb23926e51"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/preliminary_summary/comparison.csv",
+      "path": "results/baseline/summary/comparison.csv",
+      "sha256": "9e7018929bf1e1aa477772a604aa419c0f06b5aa8894cc20af28af0de363789d"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/preliminary_summary/comparison.json",
+      "path": "results/baseline/summary/comparison.json",
+      "sha256": "7877f80e0a334e86fc3f07f56ac7b9f3722847f605d3072b81cc56fa79015f31"
+    },
+    {
+      "old_path": "baseline/specgraph_baselines/preliminary_summary/model_revisions.json",
+      "path": "results/baseline/summary/model_revisions.json",
+      "sha256": "bb0eee5c7680e1ec46d012aaab03162e4c887a0b04052887628dc523df5c357b"
+    }
+  ]
+}

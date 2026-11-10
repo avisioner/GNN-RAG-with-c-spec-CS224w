@@ -1,7 +1,7 @@
 # Clause graph and Dense + GraphExp (milestone)
 
 Graph construction, the non-learned graph-expansion baseline, and its evaluation
-against Erica's text baselines. Results: [graph_expansion_results.md](../../results/milestone/graph_expansion_results.md).
+against Erica's text baselines. Results: [Results](../../results/milestone/RESULTS.md).
 Data audit: [data_validation.md](../../results/milestone/data_validation.md).
 
 ## Run
@@ -14,7 +14,7 @@ python -m pytest graph/specgraph_graph/tests -q        # hand-checked tests
 ```
 
 `run_milestone.py` reads the cached full clause scores in `artifacts/scores/question_scores.json`
-and Erica's saved rankings in `baseline/specgraph_baselines/results_*`, so it loads no model.
+and Erica's saved rankings in `results/baseline/`, so it loads no model.
 To regenerate the scores you need Erica's environment (`baseline/specgraph_baselines/requirements.txt`):
 
 ```bash

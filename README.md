@@ -1,41 +1,47 @@
-# SpecGraph-RAG Project
+# SpecGraph-RAG
 
-This repository contains the current N4950 corpus and benchmark, and the completed text retrieval baseline experiments.
+Retrieval experiments over the C++23 N4950 specification: BM25, BGE-small Dense,
+weighted reciprocal rank fusion, optional cross-encoder reranking, and Dense +
+GraphExp. Evaluation retrieves distinct clauses with representative chunk evidence.
 
-## Start Here
+**Start with [Results](results/README.md)** for the combined findings, detailed
+results and saved runs. All result documents and experiment outputs live under
+`results/`; code and reproduction instructions stay with their implementations.
 
-- **Results and analysis:** [English preliminary results](baseline/specgraph_baselines/PRELIMINARY_RESULTS.md).
-- **Run and reproduce:** [Baseline README](baseline/specgraph_baselines/README.md).
-- **Machine-readable comparison:** [All 12 configurations](baseline/specgraph_baselines/preliminary_summary/comparison.csv).
+| Selected result | Recall@10 | Complete coverage@10 |
+| --- | ---: | ---: |
+| Original question + code, Hybrid 2:1 | 70.24% | 51.02% |
+| Same input + automatic operator glossary, Hybrid 2:1 | **91.16%** | **79.59% (39/49)** |
+| Question-only Dense reference | 74.15% | 57.14% |
 
-The current preliminary references are question-only Dense retrieval at k=10
-(74.15% recall, 57.14% complete coverage) and question-only 2:1 weighted RRF at
-k=5 (65.82% recall, 48.98% complete coverage). These configurations were compared
-on the available 49-query benchmark; the results are exploratory.
+These are exploratory comparisons on the same 49 queries, not held-out test
+estimates. The glossary preserves the original question and full code. It uses
+operator spellings only; benchmark labels and manual rewrites are excluded.
 
-## Workspace Contents
+## Repository
 
-| Path | Purpose |
+| Directory | Contents |
 | --- | --- |
-| `data/processed/chunks.jsonl` | 454 specification chunks, representing 82 clauses |
-| `data/benchmark/spec_benchmark_v1.jsonl` | 49 labeled retrieval queries |
-| `data/graph/spec_graph.json` | Shared graph data for the broader project |
-| `baseline/specgraph_baselines/` | Retrieval code, tests, report, and preserved experiment results |
-| `baseline/.venv/` | Local CPU Python environment, excluded from version control |
-| `baseline/.cache/huggingface/` | Cached model weights for offline runs, excluded from version control |
+| [baseline/](baseline/specgraph_baselines/README.md) | Text retrieval code, environment setup and tests |
+| [graph/](graph/specgraph_graph/README.md) | Clause graph construction and Dense + GraphExp |
+| [experiments/](experiments/query_diagnostics/README.md) | Paired query representation experiment and verification |
+| [results/](results/README.md) | All results, rankings, metrics, audits and source snapshots |
+| `data/` | Canonical corpus (454 chunks, 82 clauses), 49-query benchmark and source graph |
+| `artifacts/` | Reusable clause graph and full question-only clause scores |
+| [docs/](docs/README.md) | Dataset review guidance and milestone writing |
 
-## Quick Run
+## Reproduce
 
-Create the Python environment using the [baseline setup instructions](baseline/specgraph_baselines/README.md), then run from the project root:
+Follow the [baseline setup](baseline/specgraph_baselines/README.md), then run
+from the project root:
 
 ```powershell
-# Run the recommended question-only baselines and 2:1 fusion.
-# A separate output directory preserves the recorded experiments.
-& baseline/specgraph_baselines/run_preliminary.ps1 -SkipRerank -QueryMode question -DenseWeight 2 -OutputName results_reproduction
+& baseline/specgraph_baselines/run_preliminary.ps1 -SkipRerank -QueryMode query_code -QueryTransform operator_gloss -DenseWeight 2 -EmbeddingRevision 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a -OutputName operator_gloss_reproduction
 ```
 
-This produces BM25, Dense, and weighted Hybrid rankings together, allowing both
-the k=10 Dense and k=5 Hybrid references to be evaluated in one run. Graph
-retrieval, GNN training, and generation are outside this baseline implementation.
-The first model run downloads weights; add `-Offline` on later runs once the
-models have been cached. Local environments and model weights are not versioned.
+Outputs go to `results/baseline/operator_gloss_reproduction/`. Add `-Offline`
+when weights are cached. Python environments and downloaded weights remain
+local and are excluded from Git. See [Results](results/README.md) for no-model
+checks and the original question-only reference.
+
+GNN training and answer generation are not implemented by these baselines.

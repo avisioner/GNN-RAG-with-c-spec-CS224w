@@ -1,6 +1,6 @@
 # Draft: Specification graph and graph-expansion baseline (Aaron)
 
-*Draft for the milestone report; numbers from `results/milestone/graph_expansion_results.md`.*
+*Draft for the milestone report; numbers from `results/milestone/RESULTS.md`.*
 
 ## Graph construction
 

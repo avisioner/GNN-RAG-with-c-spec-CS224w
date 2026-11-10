@@ -6,7 +6,7 @@ Needs numpy only. Rebuilds the validation report and clause graph, loads the
 cached full clause scores (artifacts/scores/question_scores.json; regenerate
 with clause_scores.py) and Erica's saved question-only rankings, and writes:
 
-    results/milestone/graph_expansion_results.md
+    results/milestone/RESULTS.md
     results/milestone/per_query.csv
     results/milestone/run_config.json
 
@@ -26,7 +26,7 @@ import numpy as np
 
 from clause_graph import DEFAULT_EDGE_TYPES, adjacency, build_clause_graph, node_ids, save_clause_graph
 from clause_scores import SCORES_PATH, load_scores
-from common import (BASELINE_DIR, BENCHMARK_PATH, CHUNKS_PATH, CLAUSE_GRAPH_PATH, DIFFICULTIES,
+from common import (BASELINE_RESULTS_DIR, BENCHMARK_PATH, CHUNKS_PATH, CLAUSE_GRAPH_PATH, DIFFICULTIES,
                     PROJECT_ROOT, RESULTS_DIR, load_benchmark, load_chunks, write_json)
 from evaluate import KS, boot_ci, evaluate_method, mean_by_group, paired, reachability
 from graph_expand import graph_expand, normalized_adjacency, rank, top_k_indices
@@ -39,17 +39,17 @@ RRF_K, CANDIDATE_K = 60, 50
 
 # Erica's saved question-only rankings (her reported reference input mode).
 ERICA_RUNS = {
-    "BM25": ("results_question_only", "bm25"),
-    "Dense": ("results_question_only", "dense"),
-    "Hybrid RRF 1:1": ("results_question_only", "hybrid_rrf"),
-    "Hybrid RRF 2:1": ("results_ablation_question", "hybrid_rrf_d2"),
+    "BM25": ("question_only", "bm25"),
+    "Dense": ("question_only", "dense"),
+    "Hybrid RRF 1:1": ("question_only", "hybrid_rrf"),
+    "Hybrid RRF 2:1": ("fusion_question_only", "hybrid_rrf_d2"),
 }
 
 
 def load_erica_rankings() -> dict[str, dict[str, list[str]]]:
     out: dict[str, dict[str, list[str]]] = {}
     for name, (run, key) in ERICA_RUNS.items():
-        rows = [json.loads(line) for line in (BASELINE_DIR / run / "ranked_results.jsonl").open(encoding="utf-8")]
+        rows = [json.loads(line) for line in (BASELINE_RESULTS_DIR / run / "ranked_results.jsonl").open(encoding="utf-8")]
         out[name] = {r["query_id"]: r["results"][key] for r in rows}
     return out
 
@@ -134,8 +134,8 @@ def main() -> None:
     add("# Graph-expansion results (milestone)\n")
     add(f"Generated {datetime.now(timezone.utc):%Y-%m-%d %H:%M UTC} by `python graph/specgraph_graph/run_milestone.py`.\n")
     add("**Setup.** 49 benchmark queries, 82 clauses, question-only input (Erica's reference mode). "
-        "BM25 / Dense / Hybrid rows are Erica's saved rankings (`baseline/specgraph_baselines/results_question_only`, "
-        "`results_ablation_question`); all rows go through the same metric code (`retrieval_baselines.metrics_at_k`). "
+        "BM25 / Dense / Hybrid rows are Erica's saved rankings (`results/baseline/question_only`, "
+        "`results/baseline/fusion_question_only`); all rows go through the same metric code (`retrieval_baselines.metrics_at_k`). "
         "Dense + GraphExp reranks Dense's full 82-clause scores (clause = max over chunks; these reproduce her saved "
         "Dense ranking exactly) with seed_k=5, hops=1, λ=0.5, edges = references + parent + sibling, fixed in advance. "
         "\"Hybrid\" here is Erica's BM25+Dense reciprocal-rank fusion. Graph expansion is a separate method, "
@@ -255,7 +255,7 @@ def main() -> None:
                        + [int(evals[m][qid]["complete_coverage@10"]) for m in method_cols]
                        + [";".join(rankings["Dense"][qid][:10]), ";".join(rankings[main_name][qid][:10])])
 
-    (RESULTS_DIR / "graph_expansion_results.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    (RESULTS_DIR / "RESULTS.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     import numpy
     write_json(RESULTS_DIR / "run_config.json", {
         "created_at_utc": datetime.now(timezone.utc).isoformat(),

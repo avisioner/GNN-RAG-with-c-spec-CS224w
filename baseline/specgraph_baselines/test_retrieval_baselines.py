@@ -14,6 +14,7 @@ import unittest
 from unittest.mock import patch
 
 import retrieval_baselines as baseline
+from query_transforms import operator_gloss
 
 
 def chunk(chunk_id, clause_id, text="text"):
@@ -131,6 +132,34 @@ class RetrievalTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             baseline.query_text(q, "concept")
 
+    def test_operator_gloss_inputs_match_frozen_diagnostic_for_all_queries(self):
+        root = baseline.PROJECT_ROOT
+        path = root / "results/query_diagnostics/query_inputs.jsonl"
+        expected = {r["query_id"]: r["text"] for r in baseline.read_records(path)
+                    if r["variant"] == "operator_gloss"}
+        queries = baseline.read_records(root / "data/benchmark/spec_benchmark_v1.jsonl")
+        self.assertEqual(set(expected), {q["query_id"] for q in queries})
+        for q in queries:
+            with self.subTest(query=q["query_id"]):
+                before = copy.deepcopy(q)
+                self.assertEqual(baseline.retrieval_query_text(q, transform="operator_gloss"), expected[q["query_id"]])
+                self.assertEqual(q, before)
+                self.assertEqual(baseline.retrieval_query_text(q), baseline.query_text(q))
+
+    def test_operator_gloss_compounds_deduplication_and_annotation_exclusion(self):
+        self.assertEqual(operator_gloss("x == y; x != y; x <= y; x >= y; x <<= 2; x >>= 2;"), "")
+        self.assertEqual(operator_gloss("x += 1; ++x; x++;"), "+=: addition assignment; ++: increment")
+        q = {**query(), "gold_clause_ids": ["SECRET"], "concept": "SECRET", "expected_property": "SECRET"}
+        self.assertEqual(baseline.retrieval_query_text(q, transform="operator_gloss"),
+                         "increment\ni++\nOperator spellings in the code: ++: increment")
+        self.assertEqual(baseline.retrieval_query_text({**q, "code": ""}, transform="operator_gloss"), "increment")
+
+    def test_operator_gloss_rejects_question_only_and_unknown_transform(self):
+        with self.assertRaisesRegex(ValueError, "require.*query_code"):
+            baseline.retrieval_query_text(query(), "question", "operator_gloss")
+        with self.assertRaisesRegex(ValueError, "Unknown query transform"):
+            baseline.retrieval_query_text(query(), transform="invalid")
+
     def test_reject_invalid_ids_labels_and_editions(self):
         corpus = [chunk("a1", "a"), chunk("a2", "a")]
         baseline.validate_data(corpus, [query()])  # Multiple chunks per clause are valid.
@@ -235,6 +264,18 @@ class PipelineTests(unittest.TestCase):
                 by_id = {c["chunk_id"]: c for c in chunks}
                 for cid, eid in zip(clauses, row["evidence_chunk_ids"][method]):
                     self.assertEqual(cid, by_id[eid]["clause_id"])
+            args.query_transform = "operator_gloss"
+            with patch.dict(sys.modules, {"sentence_transformers": module}), contextlib.redirect_stdout(io.StringIO()):
+                baseline.run(args)
+            expected_text = baseline.retrieval_query_text(query(), transform="operator_gloss")
+            self.assertEqual(seen["queries"], [expected_text])
+            self.assertTrue(all(text == expected_text for text, _ in seen["rerank_pairs"]))
+            self.assertEqual(baseline.read_records(root / "out/query_inputs.jsonl"),
+                             [{"query_id": "q1", "text": expected_text}])
+            config = json.loads((root / "out/run_config.json").read_text())
+            self.assertEqual(config["query_transform_version"], "operator_gloss_v1")
+            self.assertEqual(config["query_inputs_sha256"], baseline.file_sha(root / "out/query_inputs.jsonl"))
+            self.assertEqual(config["input_sha256"]["script"], baseline.file_sha(root / "out/retrieval_baselines.snapshot.py"))
 
     def test_actual_bm25_cli_requires_no_models(self):
         with tempfile.TemporaryDirectory() as location:

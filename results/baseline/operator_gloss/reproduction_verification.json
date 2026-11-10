@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "queries": 49,
+  "exact_input_matches": 49,
+  "rank_matches": {
+    "bm25": {
+      "top_10": 49,
+      "top_50": 49
+    },
+    "dense": {
+      "top_10": 49,
+      "top_50": 49
+    },
+    "hybrid_rrf": {
+      "top_10": 49,
+      "top_50": 49
+    }
+  },
+  "rank_differences": [],
+  "gold_labels_unchanged": true,
+  "evidence_mappings_valid": true,
+  "stored_metrics_verified": true,
+  "input_sha256": {
+    "chunks": "8dde85cbed9ab15256a8bf10b9bd38946dfbf5f7ed0e46a56ef0de44c7ca5c35",
+    "queries": "a279fbc70a3a4b293735b4b8d22a8f744fb147931b91807f95593aca5add7945"
+  },
+  "baseline_config_sha256": "72aaba82dbe2bb3b15be1373c0c6c25e9d4997979238ff3b09e0aabb23926e51",
+  "diagnostic_config_sha256": "527d0da04b0db0bab444482c24e484bba5f7086bc7c357f30c134f8c48fd7d61",
+  "verifier_sha256": "c01020e8b532dd417e306be25d7cf93f11b059ce3dd0363f299fe573d6cb22bf"
+}

@@ -4,13 +4,13 @@ import csv
 import json
 from pathlib import Path
 
-from retrieval_baselines import aggregate, read_records
+from retrieval_baselines import PROJECT_ROOT, aggregate, read_records
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("runs", nargs="+", type=Path)
-    parser.add_argument("--output-dir", type=Path, default=Path(__file__).parent / "preliminary_summary")
+    parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "results/baseline/summary_reproduction")
     args = parser.parse_args()
     comparison, flat_rows, signatures, annotations = [], [], set(), None
     for directory in args.runs:

@@ -1,0 +1,25 @@
+{
+  "schema_version": "query-review-v1",
+  "record_type": "annotation_template_not_benchmark_input",
+  "query_id": null,
+  "family_id": null,
+  "source_benchmark_sha256": null,
+  "task_intent": [],
+  "assumptions": [],
+  "required_evidence": [],
+  "alternative_evidence_sets": [],
+  "candidate_variants": [
+    {
+      "variant_id": null,
+      "text": null,
+      "changed_axis": null,
+      "code_preserved": null,
+      "semantic_review": "pending",
+      "gold_review": "pending",
+      "reviewer": null,
+      "rationale": null
+    }
+  ],
+  "review_status": "pending",
+  "split": null
+}
