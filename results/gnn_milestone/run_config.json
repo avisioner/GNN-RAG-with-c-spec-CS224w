@@ -1,0 +1,144 @@
+{
+  "generated_utc": "2026-11-12T01:55:19+00:00",
+  "git_commit": "3f4771aea53e02135a584e6d6e0f85778381b734",
+  "working_tree_dirty": true,
+  "data": "real benchmark queries only; no synthetic queries",
+  "corpus_path": "artifacts/corpus_v1/chunks.jsonl",
+  "corpus_commit": "7a29ead",
+  "corpus_sha256": "8dde85cbed9ab15256a8bf10b9bd38946dfbf5f7ed0e46a56ef0de44c7ca5c35",
+  "benchmark_sha256": "a279fbc70a3a4b293735b4b8d22a8f744fb147931b91807f95593aca5add7945",
+  "clause_graph_sha256": "62d9da42916e651b961c8bb5fffd155f10e709cf1b7f6f46eb4af9acf8d8c73f",
+  "query_mode": "question",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "lexical_mode": "content",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_folds": 5,
+  "fold_seed": 0,
+  "validation_fold": "(test_fold + 1) mod 5",
+  "folds": {
+    "specqa-002": 0,
+    "specqa-028": 1,
+    "specqa-027": 2,
+    "specqa-023": 3,
+    "specqa-029": 4,
+    "specqa-008": 0,
+    "specqa-021": 1,
+    "specqa-025": 2,
+    "specqa-026": 3,
+    "specqa-022": 4,
+    "specqa-001": 0,
+    "specqa-032": 1,
+    "specqa-030": 2,
+    "specqa-024": 3,
+    "specqa-031": 4,
+    "specqa-034": 0,
+    "specqa-041": 1,
+    "specqa-042": 2,
+    "specqa-037": 3,
+    "specqa-036": 4,
+    "specqa-005": 0,
+    "specqa-038": 1,
+    "specqa-044": 2,
+    "specqa-039": 3,
+    "specqa-045": 4,
+    "specqa-040": 0,
+    "specqa-010": 1,
+    "specqa-043": 2,
+    "specqa-033": 3,
+    "specqa-046": 4,
+    "specqa-035": 0,
+    "specqa-047": 1,
+    "specqa-049": 2,
+    "specqa-004": 3,
+    "specqa-006": 4,
+    "specqa-020": 0,
+    "specqa-012": 1,
+    "specqa-018": 2,
+    "specqa-003": 3,
+    "specqa-009": 4,
+    "specqa-048": 0,
+    "specqa-013": 1,
+    "specqa-014": 2,
+    "specqa-007": 3,
+    "specqa-016": 4,
+    "specqa-015": 0,
+    "specqa-011": 1,
+    "specqa-019": 2,
+    "specqa-017": 3
+  },
+  "models": {
+    "MLP (no graph)": [
+      "mlp",
+      "refs+sibling"
+    ],
+    "R-GCN": [
+      "rgcn",
+      "refs+sibling"
+    ],
+    "R-GCN (no sibling)": [
+      "rgcn",
+      "refs only"
+    ],
+    "GraphSAGE": [
+      "sage",
+      "refs+sibling"
+    ],
+    "GraphSAGE (no sibling)": [
+      "sage",
+      "refs only"
+    ],
+    "GAT": [
+      "gat",
+      "refs+sibling"
+    ],
+    "GAT (no sibling)": [
+      "gat",
+      "refs only"
+    ]
+  },
+  "train_config": {
+    "kind": "<per model>",
+    "relation_set": "<per model>",
+    "hidden": 32,
+    "layers": 2,
+    "dropout": 0.2,
+    "lr": 0.005,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 15,
+    "gat_heads": 4
+  },
+  "relations": {
+    "refs+sibling": [
+      "references (fwd)",
+      "references (rev)",
+      "sibling (both)"
+    ],
+    "refs only": [
+      "references (fwd)",
+      "references (rev)"
+    ]
+  },
+  "n_edges": {
+    "refs+sibling": 1440,
+    "refs only": 678
+  },
+  "graphexp_defaults": {
+    "seed_k": 5,
+    "hops": 1,
+    "lam": 0.5,
+    "edge_types": [
+      "references",
+      "parent",
+      "sibling"
+    ]
+  },
+  "clause_prior": "gold frequency in the 4 non-test folds; ties by dense score, then clause ID",
+  "n_training_runs": 105
+}
